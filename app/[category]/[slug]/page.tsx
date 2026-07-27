@@ -63,9 +63,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const headline = cleanText(article.title);
   const description = cleanText(article.shortdescription);
   const articleUrl = `${siteUrl}/${article.category.toLowerCase()}/${article.slug}`;
-  const imageUrl = article.image.startsWith("http")
-    ? article.image
-    : `${siteUrl}${article.image}`;
+  const logoUrl = `${siteUrl}/images/wiremingle-logo.webp`;
+  const imageUrl = article.image
+    ? article.image.startsWith("http")
+      ? article.image
+      : `${siteUrl}${article.image.startsWith("/") ? "" : "/"}${article.image}`
+    : logoUrl;
   const authorName = article.author?.name || "WireMingle Correspondent";
 
   return {
@@ -90,13 +93,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           height: 630,
           alt: headline,
         },
+        {
+          url: logoUrl,
+          width: 800,
+          height: 800,
+          alt: "WireMingle Logo",
+        },
       ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${headline} | WireMingle`,
       description,
-      images: [imageUrl],
+      images: [imageUrl, logoUrl],
     },
   };
 }
