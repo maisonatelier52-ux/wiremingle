@@ -57,7 +57,7 @@ export default function HeroGrid({ data = [] }: Props) {
         {/* ========================================================================= */}
         {/* CENTER COLUMN: Main Hero & 3-Card Sub-Grid (col-span-6)                   */}
         {/* ========================================================================= */}
-        <div className="lg:col-span-6 flex flex-col items-center justify-between text-center lg:border-r border-neutral-200/50 lg:px-5 h-full">
+        <div className="lg:col-span-6 flex flex-col items-center justify-start gap-3 text-center lg:border-r border-neutral-200/50 lg:px-5 h-full">
           {mainHero && (
             <article className="flex flex-col items-center w-full mb-0">
               <Link href={`/${mainHero.category}/${mainHero.slug}`}>
@@ -80,7 +80,7 @@ export default function HeroGrid({ data = [] }: Props) {
 
           {/* 3-Column Image Cards Grid Row Below Main Article */}
           {subHeroGrid.length > 0 && (
-            <div className="w-full pt-1.5 mt-0">
+            <div className="w-full mt-0">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
                 {subHeroGrid.map((item, idx) => (
                   <article key={item.slug || idx} className="flex flex-col gap-2">
