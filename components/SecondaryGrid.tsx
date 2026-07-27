@@ -19,7 +19,7 @@ export default function SecondaryGrid({ data = [] }: Props) {
   const col3List = data.slice(7, 9);
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-4 pb-8 md:px-6 bg-white text-black font-sans">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
         
         {/* COLUMN 1: MORE TOP STORIES */}

@@ -17,7 +17,7 @@ export default function HeroGrid({ data = [] }: Props) {
   const rightThumbnails = data.slice(11, 15);
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-3 pb-8 md:px-6 bg-white text-black font-sans">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         
         {/* ========================================================================= */}
@@ -61,7 +61,7 @@ export default function HeroGrid({ data = [] }: Props) {
           {mainHero && (
             <article className="flex flex-col items-center w-full mb-0">
               <Link href={`/${mainHero.category}/${mainHero.slug}`}>
-                <h1 className="text-[32px] md:text-[38px] font-bold text-neutral-900 leading-tight tracking-tight text-center mb-3 hover:underline transition-colors">
+                <h1 className="text-[22px] sm:text-[26px] md:text-[38px] font-bold text-neutral-900 leading-tight tracking-tight text-center mb-3 hover:underline transition-colors">
                   {mainHero.title}
                 </h1>
               </Link>

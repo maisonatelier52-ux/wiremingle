@@ -41,7 +41,7 @@ export default function CategoryHero({ category, data = [] }: Props) {
   }
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-6 md:px-6 bg-white text-black font-sans select-none">
+    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-3 pb-6 md:px-6 bg-white text-black font-sans select-none">
       {/* Category Section Title Header */}
       <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 mb-4">
         {categoryTitle}

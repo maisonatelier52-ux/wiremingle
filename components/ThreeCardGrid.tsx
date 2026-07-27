@@ -13,7 +13,7 @@ export default function ThreeCardGrid({ title, data = [] }: ThreeCardGridProps) 
   const articles = data.slice(0, 3);
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-3 pb-6 md:px-6 bg-white text-black font-sans">
       {title && (
         <div className="border-l-4 border-amber-600 pl-2 mb-5">
           <h2 className="text-[15px] font-extrabold tracking-wider text-black uppercase">
