@@ -7,12 +7,14 @@ interface ArticleCardImageProps {
   article?: Article;
   aspectRatio?: string; // e.g. "aspect-16/10", "aspect-4/3", "aspect-3/2"
   className?: string;
+  priority?: boolean;
 }
 
 export default function ArticleCardImage({
   article,
   aspectRatio = "aspect-16/10",
   className = "",
+  priority = false,
 }: ArticleCardImageProps) {
   const [imageError, setImageError] = useState(false);
 

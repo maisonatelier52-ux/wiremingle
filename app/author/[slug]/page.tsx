@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import ArticleCardImage from "@/components/ArticleCardImage";
 import AuthorArticlesList from "@/components/AuthorArticlesList";
 import { notFound } from "next/navigation";
 import { getAllAuthors, getAuthorBySlug, getArticlesByAuthorSlug } from "@/lib/articles";
@@ -18,27 +18,53 @@ export async function generateStaticParams() {
   }));
 }
 
-function cleanText(str?: string): string {
-  if (!str) return "";
-  return str
-    .replace(/:contentReference\[[^\]]*\](?:\{[^}]*\})?/g, "")
-    .replace(/&eacute;/g, "é")
-    .replace(/&Eacute;/g, "É")
-    .replace(/&rsquo;/g, "'")
-    .replace(/&lsquo;/g, "'")
-    .replace(/&rsquo;/g, "’")
-    .replace(/&lsquo;/g, "‘")
-    .replace(/&rdquo;/g, "”")
-    .replace(/&ldquo;/g, "“")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&ndash;/g, "–")
-    .replace(/&mdash;/g, "—")
-    .trim();
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const slug = resolvedParams?.slug;
+
+  const author = getAuthorBySlug(slug || "");
+  if (!author) {
+    return { title: "Author Not Found | WireMingle" };
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wiremingle.com";
+  const title = `${author.name} - ${author.role}`;
+  const description =
+    author.bio ||
+    `${author.name} is a ${author.role} at WireMingle reporting on world news and insights.`;
+  const authorUrl = `${siteUrl}/author/${author.slug}`;
+  const imageUrl = author.image.startsWith("http")
+    ? author.image
+    : `${siteUrl}${author.image}`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: authorUrl,
+    },
+    openGraph: {
+      title: `${title} | WireMingle`,
+      description,
+      url: authorUrl,
+      type: "profile",
+      siteName: "WireMingle",
+      images: [
+        {
+          url: imageUrl,
+          width: 800,
+          height: 800,
+          alt: author.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: `${title} | WireMingle`,
+      description,
+      images: [imageUrl],
+    },
+  };
 }
 
 export default async function AuthorProfilePage({ params }: PageProps) {
@@ -50,51 +76,62 @@ export default async function AuthorProfilePage({ params }: PageProps) {
   }
 
   const author = getAuthorBySlug(slug);
-
   if (!author) {
     notFound();
   }
 
   const articles = getArticlesByAuthorSlug(slug);
 
-  return (
-    <main className="w-full min-h-screen bg-white text-black font-sans flex flex-col justify-between select-none">
-      
-      <div className="mx-auto w-full max-w-[96%] xl:max-w-[1240px] px-4 md:px-6 py-8 md:py-12">
-        
-        {/* Breadcrumb Navigation */}
-        <div className="flex items-center gap-2 text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-8">
-          <Link href="/our-team" className="hover:text-black transition-colors">
-            Our Team
-          </Link>
-          <span>/</span>
-          <span className="text-neutral-900">{author.name}</span>
-        </div>
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wiremingle.com";
+  const profileSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: `${author.name} - ${author.role}`,
+    url: `${siteUrl}/author/${author.slug}`,
+    mainEntity: {
+      "@type": "Person",
+      name: author.name,
+      jobTitle: author.role,
+      description: author.bio,
+      image: `${siteUrl}${author.image}`,
+      worksFor: {
+        "@type": "NewsMediaOrganization",
+        name: "WireMingle",
+        logo: `${siteUrl}/images/wiremingle-logo.webp`,
+      },
+    },
+  };
 
-        {/* Author Bio Header Card */}
-        <div className="w-full bg-neutral-50 border border-neutral-200/80 rounded-2xl p-6 md:p-10 mb-12 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
-          {/* Avatar Image */}
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-white shadow-md bg-white shrink-0">
+  return (
+    <main className="w-full min-h-screen bg-white font-sans select-none">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileSchema) }}
+      />
+
+      <div className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 md:px-6 py-8">
+        
+        {/* Author Header Card */}
+        <div className="bg-neutral-50 border border-neutral-200/80 rounded-2xl p-6 md:p-10 mb-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 shadow-2xs">
+          
+          {/* Avatar */}
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-md flex-shrink-0">
             <img
-              src={author.image || "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=350&q=80"}
+              src={author.image}
               alt={author.name}
               className="w-full h-full object-cover"
             />
           </div>
 
-          {/* Details & Bio */}
-          <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#E31B23]">
-                AUTHOR PROFILE
-              </span>
-            </div>
-            
-            <h1 className="text-2xl md:text-4xl font-black text-neutral-900 tracking-tight leading-tight">
+          {/* Author Meta & Bio */}
+          <div className="flex flex-col text-center md:text-left flex-grow">
+            <span className="text-xs font-bold text-[#E31B23] uppercase tracking-widest mb-1">
+              Author Profile
+            </span>
+            <h1 className="text-2xl md:text-4xl font-extrabold text-neutral-900 tracking-tight">
               {author.name}
             </h1>
-            
-            <p className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mt-1 mb-3">
+            <p className="text-xs md:text-sm font-bold text-neutral-500 uppercase tracking-wider mt-1 mb-3">
               {author.role}
             </p>
 
