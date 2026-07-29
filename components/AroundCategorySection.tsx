@@ -30,21 +30,9 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
 
   if (!hasCol1 && !hasCol2 && !hasPhotos) return null;
 
-  let col1Span = "lg:col-span-4";
-  let col2Span = "lg:col-span-4";
-  let photosSpan = "lg:col-span-4";
-
-  const activeColsCount = (hasCol1 ? 1 : 0) + (hasCol2 ? 1 : 0) + (hasPhotos ? 1 : 0);
-
-  if (activeColsCount === 2) {
-    if (hasCol1) col1Span = "lg:col-span-6";
-    if (hasCol2) col2Span = "lg:col-span-6";
-    if (hasPhotos) photosSpan = "lg:col-span-6";
-  } else if (activeColsCount === 1) {
-    if (hasCol1) col1Span = "lg:col-span-12";
-    if (hasCol2) col2Span = "lg:col-span-12";
-    if (hasPhotos) photosSpan = "lg:col-span-12";
-  }
+  const col1Span = "lg:col-span-4";
+  const col2Span = "lg:col-span-4";
+  const photosSpan = "lg:col-span-4";
 
   return (
     <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans select-none">
