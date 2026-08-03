@@ -12,7 +12,7 @@ export default function PuertoRicoSection({ data = [] }: Props) {
   const cards = data.slice(0, 3);
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8 bg-white text-black font-sans">
       <div className="border-l-4 border-black pl-2 mb-5">
         <h2 className="text-[14.5px] font-extrabold tracking-wider text-black uppercase">
           REGIONAL & BUSINESS SPOTLIGHT
@@ -26,7 +26,7 @@ export default function PuertoRicoSection({ data = [] }: Props) {
               <ArticleCardImage article={item} aspectRatio="aspect-16/10" className="rounded-lg" />
             </Link>
             <Link href={`/${item.category}/${item.slug}`}>
-              <h3 className="text-[17.5px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
+              <h3 className="text-[13.5px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
                 {item.title}
               </h3>
             </Link>

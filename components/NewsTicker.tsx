@@ -42,7 +42,7 @@ export default function NewsTicker({ articles = [] }: NewsTickerProps) {
 
   return (
     <div className="w-full bg-white py-2.5 select-none">
-      <div className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 md:px-6 flex items-center justify-between gap-4">
+      <div className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 flex items-center justify-between gap-4">
         
         {/* Left Arrow Button */}
         <button
@@ -76,7 +76,7 @@ export default function NewsTicker({ articles = [] }: NewsTickerProps) {
                 <div key={item.id + idx} className="flex items-center flex-1 min-w-0 px-4 justify-center">
                   <Link
                     href={item.href}
-                    className="text-[12.5px] font-medium text-neutral-700 hover:underline transition-colors duration-150 truncate text-center cursor-pointer"
+                    className="text-[12.5px] font-normal text-neutral-700 hover:underline transition-colors duration-150 truncate text-center cursor-pointer"
                   >
                     {item.text}
                   </Link>
@@ -93,7 +93,7 @@ export default function NewsTicker({ articles = [] }: NewsTickerProps) {
                 <div key={item.id + idx} className="flex items-center flex-1 min-w-0 px-4 justify-center">
                   <Link
                     href={item.href}
-                    className="text-[12.5px] font-medium text-neutral-700 hover:underline transition-colors duration-150 truncate text-center cursor-pointer"
+                    className="text-[12.5px] font-normal text-neutral-700 hover:underline transition-colors duration-150 truncate text-center cursor-pointer"
                   >
                     {item.text}
                   </Link>
@@ -108,7 +108,7 @@ export default function NewsTicker({ articles = [] }: NewsTickerProps) {
             <div className="flex md:hidden w-full shrink-0 items-center justify-center px-4">
               <Link
                 href={headlines[currentIndex]?.href || "#"}
-                className="text-[12.5px] font-medium text-neutral-700 hover:underline transition-colors duration-150 truncate text-center cursor-pointer"
+                className="text-[12.5px] font-normal text-neutral-700 hover:underline transition-colors duration-150 truncate text-center cursor-pointer"
               >
                 {headlines[currentIndex]?.text || ""}
               </Link>

@@ -33,7 +33,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-neutral-400 py-10 font-sans border-t border-neutral-900 w-full select-none">
-      <div className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 md:px-6">
+      <div className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8">
         
         {/* Top Navigation Row */}
         <nav className="flex flex-wrap items-center justify-start gap-x-6 md:gap-x-8 gap-y-3">

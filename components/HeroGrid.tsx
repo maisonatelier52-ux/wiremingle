@@ -17,34 +17,32 @@ export default function HeroGrid({ data = [] }: Props) {
   const rightThumbnails = data.slice(11, 15);
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-3 pb-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 pt-3 pb-8 bg-white text-black font-sans">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         
         {/* ========================================================================= */}
         {/* LEFT COLUMN: Featured Story & News List (col-span-3)                       */}
         {/* ========================================================================= */}
         <div className="lg:col-span-3 flex flex-col justify-between gap-5 lg:border-r border-neutral-200/50 lg:pr-5 h-full">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             {leftFeatured && (
-              <article className="flex flex-col gap-2.5">
+              <article className="flex flex-col gap-2">
                 <Link href={`/${leftFeatured.category}/${leftFeatured.slug}`} title={leftFeatured.title}>
                   <ArticleCardImage article={leftFeatured} aspectRatio="aspect-3/2" />
                 </Link>
                 <Link href={`/${leftFeatured.category}/${leftFeatured.slug}`}>
-                  <h2 className="text-[20px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
+                  <h2 className="text-[15px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
                     {leftFeatured.title}
                   </h2>
                 </Link>
               </article>
             )}
 
-            <div className="h-[1px] bg-neutral-200/50 w-full my-1" />
-
-            <div className="flex flex-col divide-y divide-neutral-200/50">
+            <div className="flex flex-col divide-y divide-neutral-200/50 border-t border-neutral-200/50 pt-1 mt-1">
               {leftList.map((item, idx) => (
-                <article key={item.slug || idx} className="py-3.5 first:pt-0 last:pb-0 flex flex-col gap-1.5">
+                <article key={item.slug || idx} className="py-2 first:pt-0 last:pb-0 flex flex-col gap-1">
                   <Link href={`/${item.category}/${item.slug}`}>
-                    <h3 className="text-[17.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150">
+                    <h3 className="text-[13.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150">
                       {item.title}
                     </h3>
                   </Link>
@@ -61,7 +59,7 @@ export default function HeroGrid({ data = [] }: Props) {
           {mainHero && (
             <article className="flex flex-col items-center w-full mb-0">
               <Link href={`/${mainHero.category}/${mainHero.slug}`}>
-                <h1 className="text-[22px] sm:text-[26px] md:text-[38px] font-bold text-neutral-900 leading-tight tracking-tight text-center mb-3 hover:underline transition-colors">
+                <h1 className="text-[17px] sm:text-[20px] md:text-[26px] font-bold text-neutral-900 leading-tight tracking-tight text-center mb-3 hover:underline transition-colors">
                   {mainHero.title}
                 </h1>
               </Link>
@@ -72,7 +70,7 @@ export default function HeroGrid({ data = [] }: Props) {
                 </Link>
               </div>
 
-              <p className="text-[15.5px] text-neutral-800 leading-relaxed w-full text-left font-normal mb-0">
+              <p className="text-[14px] text-neutral-800 leading-snug w-full text-left font-normal mb-0">
                 {mainHero.shortdescription}
               </p>
             </article>
@@ -88,7 +86,7 @@ export default function HeroGrid({ data = [] }: Props) {
                       <ArticleCardImage article={item} aspectRatio="aspect-3/2" className="rounded-md" />
                     </Link>
                     <Link href={`/${item.category}/${item.slug}`}>
-                      <h3 className="text-[17.5px] font-semibold leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-3 mt-0.5">
+                      <h3 className="text-[13.5px] font-semibold leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-3 mt-0.5">
                         {item.title}
                       </h3>
                     </Link>
@@ -103,25 +101,23 @@ export default function HeroGrid({ data = [] }: Props) {
         {/* RIGHT COLUMN: Right Featured & Thumbnail List (col-span-3)                 */}
         {/* ========================================================================= */}
         <div className="lg:col-span-3 flex flex-col justify-between gap-5 lg:pl-1 h-full">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             {rightFeatured && (
-              <article className="flex flex-col gap-2.5">
+              <article className="flex flex-col gap-2">
                 <Link href={`/${rightFeatured.category}/${rightFeatured.slug}`}>
                   <ArticleCardImage article={rightFeatured} aspectRatio="aspect-3/2" />
                 </Link>
                 <Link href={`/${rightFeatured.category}/${rightFeatured.slug}`}>
-                  <h2 className="text-[20px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
+                  <h2 className="text-[15px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
                     {rightFeatured.title}
                   </h2>
                 </Link>
               </article>
             )}
 
-            <div className="h-[1px] bg-neutral-200/50 w-full my-1" />
-
-            <div className="flex flex-col divide-y divide-neutral-200/50">
+            <div className="flex flex-col divide-y divide-neutral-200/50 border-t border-neutral-200/50 pt-1 mt-1">
               {rightThumbnails.map((item, idx) => (
-                <article key={item.slug || idx} className="py-3.5 first:pt-0 last:pb-0 flex items-start gap-3.5">
+                <article key={item.slug || idx} className="py-2 first:pt-0 last:pb-0 flex items-start gap-3.5">
                   <div className="w-[130px] shrink-0 mt-0.5">
                     <Link href={`/${item.category}/${item.slug}`}>
                       <ArticleCardImage article={item} aspectRatio="aspect-3/2" className="rounded-xs" />
@@ -129,7 +125,7 @@ export default function HeroGrid({ data = [] }: Props) {
                   </div>
                   <div className="flex flex-col gap-1 min-w-0 flex-1">
                     <Link href={`/${item.category}/${item.slug}`}>
-                      <h3 className="text-[15.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150">
+                      <h3 className="text-[12.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150">
                         {item.title}
                       </h3>
                     </Link>

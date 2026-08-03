@@ -93,7 +93,7 @@ export default function AuthorArticlesList({ articles, authorName }: Props) {
             </div>
 
             <Link href={`/${item.category.toLowerCase()}/${item.slug}`}>
-              <h3 className="text-lg font-bold leading-snug tracking-tight text-neutral-900 group-hover:underline transition-colors line-clamp-3">
+              <h3 className="text-[15px] font-bold leading-snug tracking-tight text-neutral-900 group-hover:underline transition-colors line-clamp-3">
                 {cleanText(item.title)}
               </h3>
             </Link>

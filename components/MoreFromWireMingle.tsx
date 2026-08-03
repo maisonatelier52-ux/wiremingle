@@ -13,7 +13,7 @@ export default function MoreFromWireMingle({ data = [] }: Props) {
   const listArticles = data.slice(1, 8);
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-4 pb-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 pt-4 pb-8 bg-white text-black font-sans">
       <h2 className="text-xl md:text-[24px] font-extrabold text-black mb-3 tracking-tight">
         More News
       </h2>
@@ -30,7 +30,7 @@ export default function MoreFromWireMingle({ data = [] }: Props) {
 
                 <div className="absolute bottom-0 left-0 right-0 p-5 z-20">
                   <div className="w-6 h-[3px] bg-white mb-2.5" />
-                  <h3 className="text-white text-lg md:text-[22px] font-bold leading-snug tracking-tight hover:underline transition-colors">
+                  <h3 className="text-white text-sm md:text-[16px] font-bold leading-snug tracking-tight hover:underline transition-colors">
                     {featuredArticle.title}
                   </h3>
                 </div>
@@ -44,10 +44,10 @@ export default function MoreFromWireMingle({ data = [] }: Props) {
           {listArticles.map((item, idx) => (
             <article
               key={item.slug || idx}
-              className="py-2.5 first:pt-0 last:pb-0 flex flex-col justify-center min-w-0"
+              className="py-2 first:pt-0 last:pb-0 flex flex-col justify-center min-w-0"
             >
               <Link href={`/${item.category}/${item.slug}`}>
-                <h4 className="text-[17.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-2">
+                <h4 className="text-[13.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-2">
                   {item.title}
                 </h4>
               </Link>

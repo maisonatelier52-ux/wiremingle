@@ -56,7 +56,7 @@ export default function ShareArticleBar({ title, url }: ShareArticleBarProps) {
   };
 
   return (
-    <div className="my-8 py-4 border-t border-b border-dashed border-neutral-300 flex flex-wrap items-center justify-between gap-4 select-none">
+    <div className="mt-8 mb-0 py-4 border-t border-b border-dashed border-neutral-300 flex flex-wrap items-center justify-between gap-4 select-none">
       {/* Left: Share text with icon */}
       <button
         onClick={handleNativeShare}

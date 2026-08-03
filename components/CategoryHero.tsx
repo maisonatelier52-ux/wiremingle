@@ -41,7 +41,7 @@ export default function CategoryHero({ category, data = [] }: Props) {
   }
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 pt-3 pb-6 md:px-6 bg-white text-black font-sans select-none">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 pt-3 pb-6 bg-white text-black font-sans select-none">
       {/* Category Section Title Header */}
       <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 mb-4">
         {categoryTitle}
@@ -52,14 +52,14 @@ export default function CategoryHero({ category, data = [] }: Props) {
         {/* ========================================================================= */}
         {/* LEFT COLUMN: Main Category Hero & Text List                               */}
         {/* ========================================================================= */}
-        <div className={`${leftColSpan} flex flex-col gap-3 h-full`}>
+        <div className={`${leftColSpan} flex flex-col gap-1.5 h-full`}>
           {leftFeatured && (
-            <article className="flex flex-col gap-2.5">
+            <article className="flex flex-col gap-1.5">
               <Link href={`/${leftFeatured.category}/${leftFeatured.slug}`}>
                 <ArticleCardImage article={leftFeatured} aspectRatio="aspect-16/10" className="rounded-xl" />
               </Link>
               <Link href={`/${leftFeatured.category}/${leftFeatured.slug}`}>
-                <h2 className="text-[24px] md:text-[28px] font-bold leading-tight tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
+                <h2 className="text-[18px] md:text-[21px] font-bold leading-tight tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-0.5">
                   {leftFeatured.title}
                 </h2>
               </Link>
@@ -67,11 +67,11 @@ export default function CategoryHero({ category, data = [] }: Props) {
           )}
 
           {leftList.length > 0 && (
-            <div className="flex flex-col divide-y divide-neutral-200/60 mt-1">
+            <div className="flex flex-col divide-y divide-neutral-200/60 border-t border-neutral-200/60 mt-1 pt-0">
               {leftList.map((item, idx) => (
-                <article key={item.slug || idx} className="py-2.5 first:pt-0 last:pb-0 flex flex-col">
+                <article key={item.slug || idx} className="py-1.5 first:pt-1 last:pb-0 flex flex-col">
                   <Link href={`/${item.category}/${item.slug}`}>
-                    <h3 className="text-[17.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150">
+                    <h3 className="text-[13.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150">
                       {item.title}
                     </h3>
                   </Link>
@@ -85,14 +85,14 @@ export default function CategoryHero({ category, data = [] }: Props) {
         {/* MIDDLE COLUMN: Sub Featured & Stacked Headlines                            */}
         {/* ========================================================================= */}
         {hasMid && (
-          <div className={`${midColSpan} flex flex-col gap-3 h-full`}>
+          <div className={`${midColSpan} flex flex-col gap-1.5 h-full`}>
             {midFeatured && (
-              <article className="flex flex-col gap-2">
+              <article className="flex flex-col gap-1.5">
                 <Link href={`/${midFeatured.category}/${midFeatured.slug}`}>
                   <ArticleCardImage article={midFeatured} aspectRatio="aspect-16/10" className="rounded-xl" />
                 </Link>
                 <Link href={`/${midFeatured.category}/${midFeatured.slug}`}>
-                  <h3 className="text-[20px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
+                  <h3 className="text-[15px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-0.5">
                     {midFeatured.title}
                   </h3>
                 </Link>
@@ -100,11 +100,11 @@ export default function CategoryHero({ category, data = [] }: Props) {
             )}
 
             {midList.length > 0 && (
-              <div className="flex flex-col divide-y divide-neutral-200/60 mt-1">
+              <div className="flex flex-col divide-y divide-neutral-200/60 border-t border-neutral-200/60 mt-1 pt-0">
                 {midList.map((item, idx) => (
-                  <article key={item.slug || idx} className="py-2.5 first:pt-0 last:pb-0 flex flex-col">
+                  <article key={item.slug || idx} className="py-1.5 first:pt-1 last:pb-0 flex flex-col">
                     <Link href={`/${item.category}/${item.slug}`}>
-                      <h4 className="text-[14.5px] md:text-[15px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-2">
+                      <h4 className="text-[13px] md:text-[13.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-2">
                         {item.title}
                       </h4>
                     </Link>
@@ -126,7 +126,7 @@ export default function CategoryHero({ category, data = [] }: Props) {
                   <ArticleCardImage article={sideTop} aspectRatio="aspect-3/2" className="rounded-xl" />
                 </Link>
                 <Link href={`/${sideTop.category}/${sideTop.slug}`}>
-                  <h3 className="text-[17.5px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
+                  <h3 className="text-[13.5px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
                     {sideTop.title}
                   </h3>
                 </Link>
@@ -139,7 +139,7 @@ export default function CategoryHero({ category, data = [] }: Props) {
                   <ArticleCardImage article={sideBottom} aspectRatio="aspect-3/2" className="rounded-xl" />
                 </Link>
                 <Link href={`/${sideBottom.category}/${sideBottom.slug}`}>
-                  <h3 className="text-[17.5px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
+                  <h3 className="text-[13.5px] font-semibold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
                     {sideBottom.title}
                   </h3>
                 </Link>

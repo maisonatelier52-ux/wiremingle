@@ -35,7 +35,7 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
   const photosSpan = "lg:col-span-4";
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans select-none">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8 bg-white text-black font-sans select-none">
       {/* Section Main Title */}
       <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-neutral-900 mb-5">
         {sectionTitle}
@@ -47,7 +47,7 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
         {/* COLUMN 1: Category Column                                                 */}
         {/* ========================================================================= */}
         {hasCol1 && (
-          <div className={`${col1Span} flex flex-col gap-4`}>
+          <div className={`${col1Span} flex flex-col gap-2`}>
             <div className="flex items-center gap-2">
               <span className="w-[3px] h-4 bg-black block" />
               <span className="text-[13.5px] font-bold text-black uppercase tracking-wide">
@@ -56,12 +56,12 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
             </div>
 
             {col1Article && (
-              <article className="flex flex-col gap-2.5">
+              <article className="flex flex-col gap-2">
                 <Link href={`/${col1Article.category}/${col1Article.slug}`}>
                   <ArticleCardImage article={col1Article} aspectRatio="aspect-16/10" className="rounded-xl" />
                 </Link>
                 <Link href={`/${col1Article.category}/${col1Article.slug}`}>
-                  <h3 className="text-[18px] md:text-[20px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
+                  <h3 className="text-[15px] md:text-[16px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
                     {col1Article.title}
                   </h3>
                 </Link>
@@ -69,20 +69,17 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
             )}
 
             {col1List.length > 0 && (
-              <>
-                <div className="h-[1px] bg-neutral-200/60 w-full my-0.5" />
-                <div className="flex flex-col divide-y divide-neutral-200/60">
-                  {col1List.map((item, idx) => (
-                    <article key={item.slug || idx} className="py-2.5 first:pt-0 last:pb-0 flex flex-col">
-                      <Link href={`/${item.category}/${item.slug}`}>
-                        <p className="text-[14px] text-neutral-900 leading-snug line-clamp-2 hover:underline">
-                          {item.shortdescription || item.title}
-                        </p>
-                      </Link>
-                    </article>
-                  ))}
-                </div>
-              </>
+              <div className="flex flex-col divide-y divide-neutral-200/60 border-t border-neutral-200/60 pt-1 mt-1">
+                {col1List.map((item, idx) => (
+                  <article key={item.slug || idx} className="py-2 first:pt-0 last:pb-0 flex flex-col">
+                    <Link href={`/${item.category}/${item.slug}`}>
+                      <h4 className="text-[13.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-2">
+                        {item.title}
+                      </h4>
+                    </Link>
+                  </article>
+                ))}
+              </div>
             )}
           </div>
         )}
@@ -91,7 +88,7 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
         {/* COLUMN 2: Category Column                                                 */}
         {/* ========================================================================= */}
         {hasCol2 && (
-          <div className={`${col2Span} flex flex-col gap-4`}>
+          <div className={`${col2Span} flex flex-col gap-2`}>
             <div className="flex items-center gap-2">
               <span className="w-[3px] h-4 bg-black block" />
               <span className="text-[13.5px] font-bold text-black uppercase tracking-wide">
@@ -100,12 +97,12 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
             </div>
 
             {col2Article && (
-              <article className="flex flex-col gap-2.5">
+              <article className="flex flex-col gap-2">
                 <Link href={`/${col2Article.category}/${col2Article.slug}`}>
                   <ArticleCardImage article={col2Article} aspectRatio="aspect-16/10" className="rounded-xl" />
                 </Link>
                 <Link href={`/${col2Article.category}/${col2Article.slug}`}>
-                  <h3 className="text-[18px] md:text-[20px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
+                  <h3 className="text-[15px] md:text-[16px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1">
                     {col2Article.title}
                   </h3>
                 </Link>
@@ -113,20 +110,17 @@ export default function AroundCategorySection({ category, data = [] }: Props) {
             )}
 
             {col2List.length > 0 && (
-              <>
-                <div className="h-[1px] bg-neutral-200/60 w-full my-0.5" />
-                <div className="flex flex-col divide-y divide-neutral-200/60">
-                  {col2List.map((item, idx) => (
-                    <article key={item.slug || idx} className="py-2.5 first:pt-0 last:pb-0 flex flex-col">
-                      <Link href={`/${item.category}/${item.slug}`}>
-                        <p className="text-[14px] text-neutral-900 leading-snug line-clamp-2 hover:underline">
-                          {item.shortdescription || item.title}
-                        </p>
-                      </Link>
-                    </article>
-                  ))}
-                </div>
-              </>
+              <div className="flex flex-col divide-y divide-neutral-200/60 border-t border-neutral-200/60 pt-1 mt-1">
+                {col2List.map((item, idx) => (
+                  <article key={item.slug || idx} className="py-2 first:pt-0 last:pb-0 flex flex-col">
+                    <Link href={`/${item.category}/${item.slug}`}>
+                      <h4 className="text-[13.5px] font-medium leading-snug tracking-tight text-neutral-800 hover:underline transition-colors duration-150 line-clamp-2">
+                        {item.title}
+                      </h4>
+                    </Link>
+                  </article>
+                ))}
+              </div>
             )}
           </div>
         )}

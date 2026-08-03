@@ -100,7 +100,7 @@ export default function ShortsCarousel({ data = [] }: Props) {
   };
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans relative select-none">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8 bg-white text-black font-sans relative select-none">
       {/* Header Title */}
       <h2 className="text-xl md:text-2xl font-black text-black mb-5 tracking-tight flex items-baseline gap-1.5 select-none">
         wiremingle <span className="font-black">Shorts</span>
@@ -126,7 +126,7 @@ export default function ShortsCarousel({ data = [] }: Props) {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent z-10" />
 
                 <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
-                  <h3 className="text-white text-xs md:text-[13.5px] font-bold leading-snug tracking-tight group-hover:underline transition-colors line-clamp-3">
+                  <h3 className="text-white text-[10.5px] md:text-[11.5px] font-bold leading-snug tracking-tight group-hover:underline transition-colors line-clamp-3">
                     {item.title}
                   </h3>
                 </div>

@@ -109,7 +109,7 @@ export default async function AuthorProfilePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(profileSchema) }}
       />
 
-      <div className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 md:px-6 py-8">
+      <div className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8">
         
         {/* Author Header Card */}
         <div className="bg-neutral-50 border border-neutral-200/80 rounded-2xl p-6 md:p-10 mb-10 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 shadow-2xs">

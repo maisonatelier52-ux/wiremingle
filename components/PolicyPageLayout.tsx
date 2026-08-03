@@ -11,7 +11,7 @@ export default function PolicyPageLayout({ title, children }: PolicyPageLayoutPr
   return (
     <main className="w-full min-h-screen bg-white text-black font-sans flex flex-col justify-between">
       
-      <div className="mx-auto w-full max-w-[96%] xl:max-w-[1400px] px-4 md:px-6 pt-8 md:pt-10">
+      <div className="mx-auto w-full max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 pt-8 md:pt-10">
         
         {/* Header container aligned with content */}
         <div className="max-w-3xl mx-auto">

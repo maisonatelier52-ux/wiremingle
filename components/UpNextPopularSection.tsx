@@ -42,7 +42,7 @@ export default function UpNextPopularSection({
   if (upNextList.length === 0 && popularList.length === 0) return null;
 
   return (
-    <section className="w-full bg-white text-black font-sans pt-10 pb-6 border-t border-neutral-200/80 mt-10">
+    <section className="w-full bg-white text-black font-sans pt-8 pb-6 mt-6">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
         
         {/* LEFT COLUMN: Up next (col-span-8) */}
@@ -58,7 +58,7 @@ export default function UpNextPopularSection({
                   <ArticleCardImage article={item} aspectRatio="aspect-square" className="rounded-xl" />
                 </Link>
                 <Link href={`/${item.category}/${item.slug}`} className="mt-2.5">
-                  <h3 className="text-[14.5px] font-bold leading-snug tracking-tight text-neutral-900 group-hover:underline transition-colors duration-150 line-clamp-3">
+                  <h3 className="text-[13px] font-bold leading-snug tracking-tight text-neutral-900 group-hover:underline transition-colors duration-150 line-clamp-3">
                     {cleanText(item.title)}
                   </h3>
                 </Link>
@@ -84,7 +84,7 @@ export default function UpNextPopularSection({
                     {idx + 1}
                   </span>
                   <Link href={`/${item.category}/${item.slug}`} className="flex-1 min-w-0">
-                    <h3 className="text-[15px] md:text-[15.5px] font-normal leading-[1.35] text-neutral-900 group-hover:underline transition-colors duration-150 line-clamp-2">
+                    <h3 className="text-[13px] md:text-[13.5px] font-normal leading-[1.35] text-neutral-900 group-hover:underline transition-colors duration-150 line-clamp-2">
                       {cleanText(item.title)}
                     </h3>
                   </Link>

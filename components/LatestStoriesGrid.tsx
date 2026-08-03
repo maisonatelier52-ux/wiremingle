@@ -109,7 +109,7 @@ export default function LatestStoriesGrid({
   }
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8 bg-white text-black font-sans">
       {/* Top Main Section Title */}
       <h2 className="text-xl md:text-2xl font-extrabold tracking-tight text-neutral-900 mb-6 select-none">
         {sectionTitle}
@@ -143,7 +143,7 @@ export default function LatestStoriesGrid({
                         <ArticleCardImage article={col.featured} aspectRatio="aspect-16/10" className="rounded-lg" />
                       </Link>
                       <Link href={`/${col.featured.category}/${col.featured.slug}`}>
-                        <h4 className="text-[17px] md:text-[18.5px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
+                        <h4 className="text-[14px] md:text-[15px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
                           {cleanText(col.featured.title)}
                         </h4>
                       </Link>
@@ -157,7 +157,7 @@ export default function LatestStoriesGrid({
                         <Link
                           key={sub.slug || sIdx}
                           href={`/${sub.category}/${sub.slug}`}
-                          className="py-3 text-[13.5px] font-medium text-neutral-900 leading-snug hover:underline transition-colors duration-150 line-clamp-2"
+                          className="py-2 text-[12px] font-medium text-neutral-900 leading-snug hover:underline transition-colors duration-150 line-clamp-2"
                         >
                           {cleanText(sub.title)}
                         </Link>

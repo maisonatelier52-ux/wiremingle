@@ -106,7 +106,7 @@ export default function Header() {
 
       {/* Main Header Container */}
       <div className="border-b-2 border-black bg-white relative">
-        <div className="mx-auto flex h-16 max-w-[1400px] items-center px-4 md:px-6">
+        <div className="mx-auto flex h-16 max-w-[94%] xl:max-w-[1360px] items-center px-5 md:px-8">
           
           {/* Left: Hamburger Icon & WM Logo */}
           <div className="flex items-center gap-5 shrink-0">

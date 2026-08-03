@@ -21,7 +21,7 @@ import investigationData from "@/public/data/investigation.json";
 import { getSortedNews, Article } from "@/lib/newsUtils";
 
 export default function Home() {
-  const allNews = getSortedNews([
+  const rawAllNews = getSortedNews([
     businessData as Article[],
     worldData as Article[],
     financeData as Article[],
@@ -32,26 +32,70 @@ export default function Home() {
     investigationData as Article[]
   ]);
 
-  // Distribute news articles cleanly
-  const heroNews = allNews.slice(0, 15);
-  const secondaryNews = allNews.slice(15, 24);
-  const worldNews = allNews.slice(24, 27);
-  const worldThreeCardNews = allNews.slice(27, 30);
-  const shortsNews = allNews.slice(0, 18);
-  const regionalNews = allNews.slice(5, 9);
-  const moreNews = allNews.slice(9, 17);
+  // Strictly deduplicate all articles by slug/title to ensure zero repeats
+  const seenSlugs = new Set<string>();
+  const allNews: Article[] = [];
+  for (const article of rawAllNews) {
+    const key = article.slug || article.title;
+    if (!seenSlugs.has(key)) {
+      seenSlugs.add(key);
+      allNews.push(article);
+    }
+  }
+
+  // Sequentially distribute unique articles across home page sections
+  let cursor = 0;
+
+  const heroNews = allNews.slice(cursor, cursor + 15);
+  cursor += 15;
+
+  const secondaryNews = allNews.slice(cursor, cursor + 9);
+  cursor += 9;
+
+  const worldNews = allNews.slice(cursor, cursor + 3);
+  cursor += 3;
+
+  const worldThreeCardNews = allNews.slice(cursor, cursor + 3);
+  cursor += 3;
+
+  // Category Columns 1 (BUSINESS, WORLD, FINANCE) - pick unique unused articles
+  const cat1Article1 = allNews.slice(cursor).find((a) => a.category.toLowerCase() === "business") || allNews[cursor];
+  const cat1Article2 = allNews.slice(cursor).find((a) => a.category.toLowerCase() === "world" && a.slug !== cat1Article1.slug) || allNews[cursor + 1];
+  const cat1Article3 = allNews.slice(cursor).find((a) => a.category.toLowerCase() === "finance" && a.slug !== cat1Article1.slug && a.slug !== cat1Article2.slug) || allNews[cursor + 2];
 
   const categoryColumnsData1 = [
-    { title: "BUSINESS", article: (businessData as Article[])[0] },
-    { title: "WORLD", article: (worldData as Article[])[1] },
-    { title: "FINANCE", article: (financeData as Article[])[0] }
+    { title: "BUSINESS", article: cat1Article1 },
+    { title: "WORLD", article: cat1Article2 },
+    { title: "FINANCE", article: cat1Article3 }
   ];
 
+  // Exclude used category articles from remaining queue
+  const usedCat1Slugs = new Set([cat1Article1.slug, cat1Article2.slug, cat1Article3.slug]);
+  const queueAfterCat1 = allNews.slice(cursor).filter((a) => !usedCat1Slugs.has(a.slug));
+
+  // Category Columns 2 (TECHNOLOGY, POLITICS, LIFESTYLE) - pick unique unused articles
+  const cat2Article1 = queueAfterCat1.find((a) => a.category.toLowerCase() === "technology") || queueAfterCat1[0];
+  const cat2Article2 = queueAfterCat1.find((a) => a.category.toLowerCase() === "politics" && a.slug !== cat2Article1.slug) || queueAfterCat1[1];
+  const cat2Article3 = queueAfterCat1.find((a) => a.category.toLowerCase() === "lifestyle" && a.slug !== cat2Article1.slug && a.slug !== cat2Article2.slug) || queueAfterCat1[2];
+
   const categoryColumnsData2 = [
-    { title: "TECHNOLOGY", article: (technologyData as Article[])[0] },
-    { title: "POLITICS", article: (politicsData as Article[])[0] },
-    { title: "LIFESTYLE", article: (lifestyleData as Article[])[0] }
+    { title: "TECHNOLOGY", article: cat2Article1 },
+    { title: "POLITICS", article: cat2Article2 },
+    { title: "LIFESTYLE", article: cat2Article3 }
   ];
+
+  const usedCat2Slugs = new Set([cat2Article1.slug, cat2Article2.slug, cat2Article3.slug]);
+  const finalQueue = queueAfterCat1.filter((a) => !usedCat2Slugs.has(a.slug));
+
+  let qCursor = 0;
+
+  const shortsNews = finalQueue.slice(qCursor, qCursor + 14);
+  qCursor += 14;
+
+  const regionalNews = finalQueue.slice(qCursor, qCursor + 4);
+  qCursor += 4;
+
+  const moreNews = finalQueue.slice(qCursor, qCursor + 8);
 
   return (
     <main className="flex-1 w-full bg-white text-black font-sans">

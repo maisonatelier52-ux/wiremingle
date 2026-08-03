@@ -41,7 +41,7 @@ export default function MoreStoriesGrid({
   if (articlesList.length === 0) return null;
 
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8 bg-white text-black font-sans">
       <h2 className="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 mb-6 select-none">
         {title}
       </h2>
@@ -53,7 +53,7 @@ export default function MoreStoriesGrid({
               <ArticleCardImage article={item} aspectRatio="aspect-16/10" className="rounded-lg" />
             </Link>
             <Link href={`/${item.category}/${item.slug}`}>
-              <h3 className="text-[15px] md:text-[16px] font-bold leading-snug tracking-tight text-neutral-900 group-hover:underline transition-colors duration-150 line-clamp-3">
+              <h3 className="text-[13.5px] md:text-[14px] font-bold leading-snug tracking-tight text-neutral-900 group-hover:underline transition-colors duration-150 line-clamp-3">
                 {cleanText(item.title)}
               </h3>
             </Link>

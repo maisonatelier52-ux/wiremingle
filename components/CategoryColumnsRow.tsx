@@ -15,7 +15,7 @@ interface Props {
 
 export default function CategoryColumnsRow({ columns = [] }: Props) {
   return (
-    <section className="mx-auto max-w-[96%] xl:max-w-[1400px] px-4 py-8 md:px-6 bg-white text-black font-sans">
+    <section className="mx-auto max-w-[94%] xl:max-w-[1360px] px-5 md:px-8 py-8 bg-white text-black font-sans">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {columns.map((col, idx) => (
           <div key={idx} className="flex flex-col gap-3">
@@ -33,7 +33,7 @@ export default function CategoryColumnsRow({ columns = [] }: Props) {
                   <ArticleCardImage article={col.article} aspectRatio="aspect-16/10" className="rounded-lg" />
                 </Link>
                 <Link href={`/${col.article.category}/${col.article.slug}`}>
-                  <h3 className="text-[17.5px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
+                  <h3 className="text-[13.5px] font-bold leading-snug tracking-tight text-neutral-900 hover:underline transition-colors duration-150 mt-1 line-clamp-3">
                     {col.article.title}
                   </h3>
                 </Link>
