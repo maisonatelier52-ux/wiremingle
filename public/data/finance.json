@@ -1,6 +1,241 @@
 [
     {
-        "category": "business",
+        "category": "finance",
+        "title": "US Stocks Rise to Finish a Wild July as Amazon Soars, Apple Sinks and Inflation Worries Worsen",
+        "slug": "us-stocks-rise-finish-wild-july-amazon-soars-apple-sinks-inflation-worries",
+        "image": "/images/us-stocks-july-amazon-apple-inflation-market.webp",
+        "date": "August. 06, 2026",
+        "shortdescription": "U.S. stocks ended a volatile July higher as Amazon shares surged after strong results, Apple declined following investor concerns, and fresh inflation data increased uncertainty about the Federal Reserve’s next moves.",
+        "description": [
+            {
+                "subtitle": "Wall Street Ends Volatile July With Gains",
+                "text": "U.S. stocks finished July with gains after a turbulent month marked by strong corporate earnings, shifting inflation expectations and renewed debate over the future path of interest rates.\n\nThe market rally was supported by strong performances from several major companies, particularly Amazon, which helped lift investor sentiment after reporting better-than-expected results.\n\nDespite the overall gains, the month highlighted continued uncertainty as investors balanced optimism about corporate profits with concerns about rising prices and economic pressures.\n\nMarket analysts said July demonstrated the importance of individual company performance as investors became more selective rather than broadly buying across sectors."
+            },
+            {
+                "subtitle": "Amazon Shares Surge After Strong Earnings Report",
+                "text": "Amazon emerged as one of the biggest winners of the month after the company reported strong financial results that exceeded Wall Street expectations.\n\nInvestors responded positively to growth across Amazon’s cloud computing business, advertising operations and e-commerce segments. The company’s artificial intelligence investments also attracted attention as markets continued focusing on AI-driven growth opportunities.\n\nThe strong performance helped boost confidence in large technology companies and supported broader market gains.\n\nAnalysts said Amazon’s results reinforced expectations that companies investing heavily in technology infrastructure may continue benefiting from growing demand for AI-powered services."
+            },
+            {
+                "subtitle": "Apple Shares Fall as Investors Question Future Growth",
+                "text": "While Amazon gained momentum, Apple faced pressure as investors expressed concerns about slowing growth, competition and the company’s ability to maintain its market leadership.\n\nApple’s stock decline reflected broader questions about smartphone demand, supply chain challenges and the pace of artificial intelligence integration across its products.\n\nInvestors have been watching whether Apple can accelerate its AI strategy and introduce new growth opportunities beyond its existing hardware ecosystem.\n\nThe contrast between Amazon’s gains and Apple’s losses showed how differently investors are evaluating even the largest technology companies."
+            },
+            {
+                "subtitle": "Inflation Data Raises Fresh Market Concerns",
+                "text": "Inflation remained a major concern for investors throughout July as new economic data suggested price pressures could take longer to ease.\n\nHigher inflation can affect markets by influencing Federal Reserve decisions on interest rates. If inflation remains elevated, policymakers may delay rate cuts or maintain tighter financial conditions.\n\nInvestors are closely monitoring consumer prices, wage trends and economic growth indicators to determine whether the U.S. economy is moving toward a softer landing.\n\nThe latest inflation concerns added uncertainty despite strong corporate earnings."
+            },
+            {
+                "subtitle": "Technology Stocks Continue Driving Market Direction",
+                "text": "Technology companies remained central to market performance as investors continued evaluating the impact of artificial intelligence investments.\n\nMajor firms have committed billions of dollars toward AI infrastructure, including data centers, chips and software platforms. Investors are increasingly focused on whether these investments will translate into long-term profits.\n\nWhile AI optimism has supported stock valuations, analysts warn that expectations have become increasingly demanding.\n\nThe technology sector’s performance remains one of the biggest factors influencing overall market direction."
+            },
+            {
+                "subtitle": "Investors Look Ahead After a Record-Setting Month",
+                "text": "As July ended, investors entered the next phase of the year with attention focused on corporate earnings, inflation trends and Federal Reserve policy decisions.\n\nStrong results from companies such as Amazon have provided support for markets, but concerns about inflation and economic uncertainty remain.\n\nAnalysts say future gains will likely depend on whether businesses can continue delivering strong profits while inflation moves closer to central bank targets.\n\nThe month’s mixed performance showed that even during periods of market strength, investors remain cautious about risks that could influence the next major market move."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Global Markets Correspondent",
+            "bio": "Ramon T. Maris covers financial markets, corporate earnings, technology companies and economic trends influencing investors worldwide.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "finance",
+        "title": "Wall Street Week Ahead: Monthly Jobs Report, McDonald’s and SpaceX Earnings in Focus",
+        "slug": "wall-street-week-ahead-monthly-jobs-report-mcdonalds-spacex-earnings",
+        "image": "/images/wall-street-week-ahead-jobs-report-mcdonalds-spacex-earnings.webp",
+        "date": "August. 06, 2026",
+        "shortdescription": "Investors are preparing for a closely watched week on Wall Street as markets await the latest U.S. jobs report along with earnings updates from major companies including McDonald’s and SpaceX, which could influence expectations for the economy and corporate growth.",
+        "description": [
+            {
+                "subtitle": "Jobs Report Becomes Key Test for U.S. Economy",
+                "text": "Wall Street is entering a critical week as investors await the latest monthly U.S. employment report, one of the most important indicators of economic strength and a major factor influencing Federal Reserve policy decisions.\n\nThe jobs data will provide insight into hiring trends, wage growth and whether the labor market is continuing to slow or showing signs of renewed strength.\n\nInvestors closely monitor employment figures because changes in the labor market can influence expectations for interest rates, inflation and future economic growth.\n\nA stronger-than-expected report could reduce expectations for rate cuts, while weaker employment numbers could increase pressure on policymakers to support economic activity."
+            },
+            {
+                "subtitle": "Federal Reserve Policy Remains Central to Market Outlook",
+                "text": "The upcoming economic data arrives as investors continue evaluating the Federal Reserve’s next moves on interest rates.\n\nMarkets have been highly sensitive to signals from central bank officials as inflation trends and economic growth expectations continue to shape monetary policy.\n\nLower interest rates can support stock markets by reducing borrowing costs and increasing the value of future corporate earnings.\n\nHowever, policymakers have emphasized that decisions will depend on incoming economic data rather than market expectations alone."
+            },
+            {
+                "subtitle": "McDonald’s Earnings to Reveal Consumer Spending Trends",
+                "text": "Investors will also focus on McDonald’s quarterly earnings report for clues about consumer behavior, restaurant demand and the impact of changing economic conditions.\n\nThe fast-food giant has faced challenges including inflation pressures, changing customer preferences and increased competition from other restaurant brands.\n\nAnalysts will examine sales growth, international performance and whether consumers are becoming more price-sensitive.\n\nMcDonald’s results are often viewed as a broader indicator of consumer confidence because the company serves millions of customers across global markets."
+            },
+            {
+                "subtitle": "SpaceX Results Highlight Growth of Space Economy",
+                "text": "SpaceX earnings will attract significant attention as investors and industry observers evaluate the company’s performance across satellite communications, space launches and emerging technology businesses.\n\nThe company’s Starlink satellite internet service has become a major growth driver, expanding connectivity services worldwide and creating a new source of recurring revenue.\n\nSpaceX’s launch business and investments in advanced space technology continue to strengthen its position as one of the most influential private companies in the aerospace industry.\n\nAnalysts will watch revenue growth, operational expansion and future plans for Starlink and space exploration programs."
+            },
+            {
+                "subtitle": "Investors Monitor Corporate Profit Strength",
+                "text": "Beyond individual companies, Wall Street will continue evaluating whether corporate earnings can justify historically high market valuations.\n\nStrong profits from technology companies, artificial intelligence firms and other major businesses have supported stock market gains throughout the year.\n\nHowever, investors remain cautious about potential risks including inflation, geopolitical uncertainty and slowing economic growth.\n\nThe upcoming combination of economic data and major earnings reports could provide a clearer picture of whether current market momentum can continue."
+            },
+            {
+                "subtitle": "A Crucial Week for Market Direction",
+                "text": "The jobs report, McDonald’s earnings and SpaceX results will provide investors with important information about the health of the U.S. economy and the strength of corporate growth.\n\nA positive combination of strong employment, resilient consumer demand and expanding technology businesses could reinforce market optimism.\n\nHowever, weaker-than-expected results could increase concerns about slowing growth and renewed volatility.\n\nFor Wall Street, the coming week represents another major test of whether economic resilience and corporate profitability can continue supporting record-level markets."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Global Markets Correspondent",
+            "bio": "Ramon T. Maris covers financial markets, corporate earnings, technology companies and economic trends shaping global investment decisions.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "finance",
+        "title": "US Stocks Hit Records as Profits Keep Piling Up for Palantir and Others, While Oil Prices Ease",
+        "slug": "us-stocks-hit-records-profits-piling-up-palantir-oil-prices-ease",
+        "image": "/images/us-stocks-records-palantir-profits-oil-prices.webp",
+        "date": "August. 06, 2026",
+        "shortdescription": "U.S. stocks reached new records as strong corporate earnings, including major results from Palantir and other companies, boosted investor confidence while easing oil prices reduced concerns about inflation and energy costs.",
+        "description": [
+            {
+                "subtitle": "Wall Street Reaches New Highs on Strong Corporate Earnings",
+                "text": "U.S. stock markets climbed to record levels as investors responded positively to another wave of strong corporate earnings reports. Companies including Palantir Technologies delivered better-than-expected results, helping support optimism about business growth and market momentum.\n\nThe gains reflected continued investor confidence that major companies can maintain earnings growth despite concerns about economic uncertainty, interest rates and global geopolitical risks.\n\nThe S&P 500 and other major indexes benefited from strength across several sectors, with technology and artificial intelligence-related companies remaining key drivers of market performance.\n\nAnalysts said strong profits have become one of the main reasons investors continue supporting stocks at historically high valuations."
+            },
+            {
+                "subtitle": "Palantir’s AI Growth Boosts Investor Confidence",
+                "text": "Palantir Technologies emerged as one of the companies attracting significant attention after reporting strong financial performance linked to growing demand for artificial intelligence and data analytics services.\n\nThe company’s AI platforms have gained interest from government agencies and commercial customers seeking advanced tools for analyzing large amounts of information.\n\nInvestors viewed Palantir’s results as evidence that companies focused on artificial intelligence are beginning to convert technology investments into revenue growth.\n\nThe performance added momentum to broader enthusiasm surrounding AI-related businesses, although some analysts continue warning that valuations remain elevated."
+            },
+            {
+                "subtitle": "Technology Sector Continues Driving Market Gains",
+                "text": "Technology stocks remained among the strongest contributors to Wall Street’s advance as investors continued betting on artificial intelligence, cloud computing and semiconductor growth.\n\nMajor technology companies have invested heavily in AI infrastructure, including data centers, advanced chips and software platforms designed to support next-generation applications.\n\nWhile enthusiasm remains high, investors are increasingly focused on whether companies can deliver measurable financial returns from these investments.\n\nRecent market movements show a shift from simply rewarding AI announcements toward evaluating actual earnings performance."
+            },
+            {
+                "subtitle": "Falling Oil Prices Provide Relief for Investors",
+                "text": "Alongside strong corporate earnings, easing oil prices helped support investor sentiment by reducing concerns about higher energy costs and inflation pressures.\n\nLower crude prices can benefit consumers and businesses by reducing transportation and production expenses, potentially supporting economic growth.\n\nEnergy markets have been closely watched due to geopolitical tensions and uncertainty surrounding global supply chains.\n\nInvestors welcomed the decline in oil prices as a sign that energy-related inflation risks may be moderating."
+            },
+            {
+                "subtitle": "Markets Balance Growth Optimism With Inflation Concerns",
+                "text": "Despite record stock levels, investors remain cautious about several risks, including inflation, interest rate decisions and geopolitical uncertainty.\n\nThe Federal Reserve’s future policy decisions remain a major focus for markets because changes in interest rates can influence borrowing costs, business investment and stock valuations.\n\nStrong earnings have helped offset some concerns, but analysts warn that markets may remain sensitive to economic data and unexpected global developments.\n\nInvestors are watching whether current profit growth can continue supporting elevated stock prices."
+            },
+            {
+                "subtitle": "AI Boom Reshapes Investor Strategy",
+                "text": "The latest market gains highlight how artificial intelligence has reshaped investment strategies across Wall Street. Companies connected to AI infrastructure, software and automation continue attracting significant investor interest.\n\nHowever, financial analysts emphasize that long-term success will depend on whether these companies can sustain revenue growth and deliver consistent profitability.\n\nThe combination of strong earnings, cooling energy prices and continued AI optimism has created a favorable environment for U.S. stocks.\n\nAs markets move forward, investors will closely track corporate results, economic indicators and policy decisions to determine whether the rally can continue."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Global Markets Correspondent",
+            "bio": "Ramon T. Maris covers financial markets, technology companies, artificial intelligence trends and economic developments influencing global investors.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "finance",
+        "title": "US Stocks Hold Near Records on Hopes of an Agreement With Iran",
+        "slug": "us-stocks-hold-near-records-hopes-agreement-iran",
+        "image": "/images/us-stocks-record-high-iran-deal-hopes.webp",
+        "date": "August. 06, 2026",
+        "shortdescription": "U.S. stocks remained near record highs as investors reacted positively to hopes of a potential agreement between Washington and Tehran that could ease tensions around the Strait of Hormuz and reduce energy market risks. :contentReference[oaicite:0]{index=0}",
+        "description": [
+            {
+                "subtitle": "Wall Street Stays Close to Record Levels",
+                "text": "U.S. stock markets remained near record highs as investors balanced optimism over possible diplomatic progress with Iran against concerns about technology valuations and future economic conditions. The Dow Jones Industrial Average reached a new closing record, while the broader market showed mixed movement. :contentReference[oaicite:1]{index=1}\n\nInvestor sentiment has been supported by expectations that a potential agreement involving Iran could reduce geopolitical risks and ease concerns about disruptions to global energy supplies.\n\nMarkets have closely followed developments around the Strait of Hormuz, a critical route for international oil shipments. Any reduction in tensions could help stabilize energy prices and reduce inflation concerns for businesses and consumers. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+                "subtitle": "Iran Deal Hopes Ease Energy Market Concerns",
+                "text": "Optimism over possible progress between the United States and Iran has become a major factor influencing financial markets. Investors believe a diplomatic breakthrough could reduce risks surrounding oil transportation and regional instability. :contentReference[oaicite:3]{index=3}\n\nLower geopolitical risk can support stock markets by improving expectations for economic growth and reducing pressure on energy costs.\n\nOil prices remained relatively steady as traders monitored reports of potential arrangements involving the Strait of Hormuz. However, analysts cautioned that uncertainty remains until any agreement is finalized and implemented. :contentReference[oaicite:4]{index=4}"
+            },
+            {
+                "subtitle": "Technology Stocks Create Market Pressure",
+                "text": "While broader markets remained strong, technology stocks faced pressure as investors reassessed valuations after a period of major gains driven by artificial intelligence investments.\n\nThe Nasdaq Composite declined as some large technology companies experienced losses, highlighting concerns that expectations for AI-related growth may have become too aggressive. :contentReference[oaicite:5]{index=5}\n\nInvestors have increasingly focused on whether major technology companies can convert large AI investments into sustainable earnings growth. The recent volatility reflects a shift toward more selective decision-making within the sector."
+            },
+            {
+                "subtitle": "Corporate Earnings Continue Supporting Investor Confidence",
+                "text": "Strong corporate earnings have provided additional support for U.S. markets. Companies reporting better-than-expected results have helped maintain investor confidence despite uncertainty surrounding interest rates and global politics. :contentReference[oaicite:6]{index=6}\n\nAnalysts say earnings growth has been a major factor behind the market’s resilience, with many investors looking beyond short-term geopolitical concerns.\n\nThe combination of strong company performance and hopes for reduced international tensions has helped stocks remain close to historic levels."
+            },
+            {
+                "subtitle": "Investors Await Economic Data and Federal Reserve Signals",
+                "text": "Markets are also watching upcoming economic reports for clues about the direction of U.S. monetary policy. Employment data, inflation trends and Federal Reserve decisions remain key factors influencing investor expectations. :contentReference[oaicite:7]{index=7}\n\nA weaker economic outlook could increase expectations for interest rate adjustments, while stronger growth could encourage policymakers to maintain tighter financial conditions.\n\nInvestors are navigating a complex environment where geopolitical developments, corporate earnings and central bank policy are all influencing market direction."
+            },
+            {
+                "subtitle": "Markets Remain Optimistic but Cautious",
+                "text": "The recent strength in U.S. stocks reflects growing optimism that some major market risks may be easing. A potential agreement with Iran could reduce concerns about energy disruptions, while strong earnings continue to support valuations. :contentReference[oaicite:8]{index=8}\n\nHowever, analysts warn that markets remain vulnerable to sudden changes in geopolitical negotiations, inflation data or technology sector weakness.\n\nFor investors, the current environment represents a balance between optimism over improving conditions and caution about unresolved global challenges."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Global Markets Correspondent",
+            "bio": "Ramon T. Maris covers financial markets, economic trends, geopolitical risks and business developments affecting investors worldwide.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "finance",
+        "title": "World Shares Are Mixed and Kospi Falls 4.6% After Tech Giants Decline on Wall Street",
+        "slug": "world-shares-mixed-kospi-falls-4-6-after-tech-giants-decline-wall-street",
+        "image": "/images/world-markets-kospi-tech-stock-decline-wall-street.webp",
+        "date": "August. 06, 2026",
+        "shortdescription": "Global stock markets showed mixed performance as South Korea’s Kospi fell 4.6% following sharp declines in major technology companies, while investors reassessed valuations and awaited new economic signals from the United States. :contentReference[oaicite:0]{index=0}",
+        "description": [
+            {
+                "subtitle": "South Korea’s Kospi Hit by Major Technology Selloff",
+                "text": "Global markets opened with mixed results as a sharp decline in Asian technology shares weighed on investor sentiment. South Korea’s benchmark Kospi index dropped 4.6%, pressured by losses in major chip companies including SK Hynix and Samsung Electronics. :contentReference[oaicite:1]{index=1}\n\nThe decline followed weakness among major technology companies on Wall Street, where investors took profits after a strong period for artificial intelligence-related stocks. The selloff raised concerns about whether high valuations across the technology sector could be sustained. :contentReference[oaicite:2]{index=2}\n\nSouth Korea’s market is particularly sensitive to movements in semiconductor companies because technology firms represent a significant portion of the country’s stock market value."
+            },
+            {
+                "subtitle": "Wall Street Technology Stocks Pressure Global Markets",
+                "text": "The global decline was linked to weakness among leading U.S. technology companies, including major artificial intelligence and semiconductor-related firms. Investors have become increasingly cautious about the pace of AI-driven growth and the scale of spending required to support the industry. :contentReference[oaicite:3]{index=3}\n\nThe Nasdaq Composite declined as technology shares pulled back, creating pressure across markets that had benefited from strong enthusiasm around AI investments. :contentReference[oaicite:4]{index=4}\n\nAnalysts say investors are now focusing more closely on whether large technology companies can deliver enough earnings growth to justify elevated market valuations."
+            },
+            {
+                "subtitle": "Chipmakers Lead the Decline Across Asian Markets",
+                "text": "Semiconductor companies were among the biggest losers during the market downturn. SK Hynix shares dropped sharply, while Samsung Electronics also recorded significant losses as investors reduced exposure to technology stocks. :contentReference[oaicite:5]{index=5}\n\nThe weakness spread across other Asian markets, with Japan’s Nikkei declining and Hong Kong’s Hang Seng also moving lower. China and Australia markets showed more stability compared with other regional indexes. :contentReference[oaicite:6]{index=6}\n\nThe movement highlights how closely connected global markets have become, with technology sector shifts in the United States quickly affecting Asian economies heavily dependent on semiconductor exports."
+            },
+            {
+                "subtitle": "Investors Watch U.S. Economic Data and Interest Rates",
+                "text": "Market participants are closely monitoring upcoming U.S. economic data, including employment figures, for signals about the strength of the economy and the future direction of interest rates. :contentReference[oaicite:7]{index=7}\n\nInvestors remain focused on whether central banks will adjust monetary policy as inflation pressures and economic growth expectations continue to change.\n\nHigher interest rates can reduce the attractiveness of high-growth technology stocks by increasing borrowing costs and lowering the present value of future earnings.\n\nThe latest market movements reflect a broader shift toward caution after months of strong gains in AI-related companies."
+            },
+            {
+                "subtitle": "European Markets Show More Stability",
+                "text": "While Asian markets faced pressure from technology declines, European stocks opened slightly higher. France’s CAC 40, Germany’s DAX and the UK’s FTSE 100 all recorded modest gains as investors balanced concerns over technology valuations with optimism from other sectors. :contentReference[oaicite:8]{index=8}\n\nEuropean markets have been less exposed to the extreme concentration of technology stocks seen in some Asian and U.S. indexes.\n\nAnalysts say diversification across industries has helped limit some of the volatility affecting technology-heavy markets."
+            },
+            {
+                "subtitle": "AI Investment Concerns Drive Market Reassessment",
+                "text": "The latest market decline reflects growing investor debate over the sustainability of the artificial intelligence boom. Companies have announced massive investments in AI infrastructure, but investors are increasingly questioning how quickly those investments will translate into profits. :contentReference[oaicite:9]{index=9}\n\nTechnology remains one of the strongest drivers of global economic growth, but recent volatility shows that investors are becoming more selective about which companies are likely to benefit.\n\nMarket analysts say the long-term outlook for AI remains significant, but short-term corrections may continue as investors adjust expectations and evaluate corporate earnings."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Global Markets Correspondent",
+            "bio": "Ramon T. Maris covers global financial markets, technology companies, economic trends and major developments influencing investors worldwide.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "finance",
         "title": "Wall Street Drifts as AI Stocks Hold Steadier After Last Week’s Losses",
         "slug": "wall-street-drifts-as-ai-stocks-hold-steadier-after-last-weeks-losses",
         "image": "/images/wall-street-ai-stocks-steady-after-losses.webp",

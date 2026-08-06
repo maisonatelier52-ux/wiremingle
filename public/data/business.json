@@ -1,6 +1,45 @@
 [
     {
         "category": "business",
+        "title": "SpaceX Posts Loss in First Report as a Public Company but Less Than Expected",
+        "slug": "spacex-posts-loss-in-first-report-as-a-public-company-but-less-than-expected",
+        "image": "/images/spacex-first-public-company-earnings-report-loss.webp",
+        "date": "August. 5, 2026",
+        "shortdescription": "SpaceX reported a loss in its first earnings report as a public company, but the results were better than Wall Street expectations as strong launch activity and growing space services revenue helped offset rising artificial intelligence and infrastructure costs.",
+        "description": [
+            {
+                "subtitle": "SpaceX Reports First Public Earnings Results",
+                "text": "SpaceX reported a loss in its first earnings announcement as a publicly traded company, marking a new chapter for one of the world’s most valuable private aerospace firms. The company’s results showed financial pressure from heavy investments in advanced technology and infrastructure, but the loss was smaller than analysts had expected. The earnings report provided investors with their first detailed look at SpaceX’s financial performance following its transition into public markets. The company has historically operated with limited financial disclosure as a private business controlled by Elon Musk. SpaceX’s public reporting highlighted the scale of its operations, including rocket launches, satellite internet services, spacecraft development, and long-term investments in space technology. Despite reporting a loss, investors focused on the company’s expanding revenue base and its ability to maintain growth across multiple business lines. The results suggested that SpaceX remains in an aggressive investment phase as it continues funding ambitious projects while attempting to improve profitability."
+            },
+            {
+                "subtitle": "Starlink Growth Helps Support SpaceX Revenue Expansion",
+                "text": "A major contributor to SpaceX’s financial growth has been Starlink, the company’s satellite internet network designed to provide high-speed connectivity worldwide. Starlink has expanded rapidly across consumer, enterprise, and government markets, creating a recurring revenue stream that has become increasingly important to SpaceX’s overall business strategy. The satellite network has helped diversify SpaceX beyond traditional rocket launch services, reducing the company’s dependence on government contracts and commercial launch customers. Analysts say Starlink’s growth potential remains one of SpaceX’s strongest financial advantages, particularly as demand increases for reliable internet access in remote regions and during emergency situations. However, expanding a global satellite network requires significant capital spending, including satellite production, launches, ground infrastructure, and maintenance. These investments have contributed to near-term costs even as the business continues to grow. SpaceX expects Starlink to play a central role in improving long-term profitability as subscriber numbers increase and operational efficiency improves."
+            },
+            {
+                "subtitle": "Heavy AI and Technology Spending Raises Cost Concerns",
+                "text": "While SpaceX’s revenue growth has attracted investor attention, the company’s rising expenses have become a key focus following its first public earnings report. The company has increased spending on artificial intelligence systems, computing infrastructure, and advanced technology development as it expands its ambitions beyond traditional aerospace operations. SpaceX has been investing in technologies that support autonomous spacecraft operations, satellite management, engineering systems, and future space missions. The company’s broader technology strategy reflects a growing connection between aerospace and artificial intelligence, with major technology firms increasing investments in AI infrastructure. However, higher research and development costs have placed pressure on short-term earnings. Investors are watching whether these investments will create new revenue opportunities or continue weighing on profitability. SpaceX executives have emphasized that many of these expenses are aimed at building long-term capabilities rather than producing immediate financial returns."
+            },
+            {
+                "subtitle": "Investors Watch SpaceX’s Long-Term Growth Strategy",
+                "text": "SpaceX’s first earnings report comes as investors evaluate whether the company can balance ambitious expansion plans with financial discipline. The company has built a dominant position in commercial space launches through its reusable rocket technology and has become a major supplier for government and private-sector missions. Its future growth plans include expanding Starlink, developing next-generation spacecraft, and advancing its long-term goal of human missions beyond Earth. Analysts say SpaceX’s public market performance will depend on its ability to convert technological leadership into sustainable profits. Unlike traditional aerospace companies, SpaceX has pursued rapid innovation and large-scale investment, often prioritizing future opportunities over short-term earnings. The company’s first financial results indicate that investors remain focused on growth potential despite current losses. As SpaceX enters a new phase as a public company, its ability to manage costs, expand revenue streams, and deliver on ambitious projects will determine how markets value its future."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Senior Business Correspondent",
+            "bio": "Ramon T. Maris covers global companies, technology markets, corporate strategy, aerospace businesses, and international economic trends.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "business",
         "title": "Vietnam’s Biggest Company, Vingroup, Expands Overseas as Its Home Market Slows",
         "slug": "vietnams-biggest-company-vingroup-expands-overseas-as-home-market-slows",
         "image": "/images/vietnam-vingroup-expands-overseas-global-growth.webp",
