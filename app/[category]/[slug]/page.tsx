@@ -273,7 +273,7 @@ export default async function ArticleDetailPage({ params }: PageProps) {
                 </p>
 
                 {/* Extended Paragraphs */}
-                {article.description && article.description.length > 0 ? (
+                {Array.isArray(article.description) && article.description.length > 0 ? (
                   article.description.map((sec, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
                       {sec.subtitle && (
@@ -284,6 +284,10 @@ export default async function ArticleDetailPage({ params }: PageProps) {
                       <p>{cleanText(sec.text)}</p>
                     </div>
                   ))
+                ) : typeof article.description === "string" ? (
+                  <div className="flex flex-col gap-2">
+                    <p>{cleanText(article.description)}</p>
+                  </div>
                 ) : (
                   <p>
                     Additional details and real-time updates regarding this breaking story will continue to be posted by WireMingle correspondents.
