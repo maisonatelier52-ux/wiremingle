@@ -5,6 +5,7 @@ import { Article } from "@/lib/newsUtils";
 import ArticleCardImage from "./ArticleCardImage";
 
 interface Props {
+  title?: string;
   upNextArticles?: Article[];
   mostPopularArticles?: Article[];
 }
@@ -33,6 +34,7 @@ function cleanText(str?: string): string {
 }
 
 export default function UpNextPopularSection({
+  title = "More Stories",
   upNextArticles = [],
   mostPopularArticles = [],
 }: Props) {
@@ -43,15 +45,15 @@ export default function UpNextPopularSection({
 
   return (
     <section className="w-full bg-white text-black font-sans pt-8 pb-6 mt-6">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         
-        {/* LEFT COLUMN: Up next (col-span-8) */}
-        <div className="lg:col-span-8 flex flex-col">
+        {/* LEFT COLUMN: Up next (col-span-9) - matches left full section width */}
+        <div className="lg:col-span-9 flex flex-col lg:border-r border-neutral-200/70 lg:pr-8">
           <h2 className="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 mb-6 select-none">
-            Up next
+            {title}
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4.5">
             {upNextList.map((item, idx) => (
               <article key={item.slug || idx} className="group flex flex-col min-w-0">
                 <Link href={`/${item.category}/${item.slug}`} title={item.title}>
@@ -70,8 +72,8 @@ export default function UpNextPopularSection({
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Most popular (col-span-4) - STICKY WHILE UP NEXT SCROLLS */}
-        <div className="lg:col-span-4 flex flex-col h-full">
+        {/* RIGHT COLUMN: Most popular (col-span-3) - matches top categories & author section width */}
+        <div className="lg:col-span-3 flex flex-col h-full">
           <div className="sticky top-6">
             <h2 className="text-[22px] md:text-[24px] font-extrabold tracking-tight text-black mb-5 select-none">
               Most popular
@@ -79,7 +81,7 @@ export default function UpNextPopularSection({
 
             <div className="flex flex-col divide-y divide-neutral-200/70">
               {popularList.map((item, idx) => (
-                <article key={item.slug || idx} className="py-3.5 first:pt-0 flex items-start gap-5 group">
+                <article key={item.slug || idx} className="py-3.5 first:pt-0 flex items-start gap-3.5 group">
                   <span className="text-[17px] md:text-[18px] font-extrabold text-black w-4 flex-shrink-0 text-left mt-0.5 select-none">
                     {idx + 1}
                   </span>

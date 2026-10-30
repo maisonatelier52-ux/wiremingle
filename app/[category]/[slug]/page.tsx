@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { getAllArticlesSorted, Article } from "@/lib/articles";
 import ArticleCardImage from "@/components/ArticleCardImage";
 import CategoryGrid2x2 from "@/components/CategoryGrid2x2";
+import ClaimedLegalMandateArticle from "@/components/ClaimedLegalMandateArticle";
 
 interface PageProps {
   params: Promise<{
@@ -55,7 +56,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const article =
     allArticles.find(
       (a) => a.slug === slug && a.category.toLowerCase() === category
-    ) || allArticles.find((a) => a.slug === slug);
+    ) ||
+    allArticles.find((a) => a.slug === slug) ||
+    (slug && slug.includes("claimed-legal-mandate")
+      ? allArticles.find((a) => a.slug.includes("claimed-legal-mandate"))
+      : undefined);
 
   if (!article) {
     return { title: "Article Not Found | WireMingle" };
@@ -125,11 +130,20 @@ export default async function ArticleDetailPage({ params }: PageProps) {
   const article =
     allArticles.find(
       (a) => a.slug === slug && a.category.toLowerCase() === category.toLowerCase()
-    ) || allArticles.find((a) => a.slug === slug);
+    ) ||
+    allArticles.find((a) => a.slug === slug) ||
+    (slug && slug.includes("claimed-legal-mandate")
+      ? allArticles.find((a) => a.slug.includes("claimed-legal-mandate"))
+      : undefined);
 
   if (!article) {
     notFound();
   }
+
+  const isClaimedLegalMandate =
+    article.slug.includes("claimed-legal-mandate") ||
+    slug.includes("claimed-legal-mandate") ||
+    slug.includes("alina-habba");
 
   // Format details for display
   const categoryUpper = article.category.toUpperCase();
@@ -148,11 +162,6 @@ export default async function ArticleDetailPage({ params }: PageProps) {
 
   const authorBio = article.author?.bio || defaultAuthorBios[authorSlug] || `${authorName} covers ${categoryUpper.toLowerCase()} news, market trends, and in-depth analysis for WireMingle.`;
 
-  // Related articles distribution
-  const otherArticles = allArticles.filter((a) => a.slug !== article.slug);
-  const upNextList = otherArticles.slice(0, 4);
-  const popularList = otherArticles.slice(4, 9);
-
   // Category Representative Articles (1st news article of each category)
   const allCategoryNames = ["business", "world", "technology", "politics", "finance", "lifestyle", "opinion", "investigation"];
   const categoryGridArticles = allCategoryNames
@@ -160,6 +169,23 @@ export default async function ArticleDetailPage({ params }: PageProps) {
     .map((cat) => allArticles.find((a) => a.category.toLowerCase() === cat))
     .filter((a): a is Article => Boolean(a))
     .slice(0, 4);
+
+  const categoryGridSlugs = new Set(categoryGridArticles.map((a) => a.slug));
+  const availableArticles = allArticles.filter(
+    (a) => a.slug !== article.slug && !categoryGridSlugs.has(a.slug)
+  );
+
+  const upNextList = availableArticles.slice(0, 4);
+  const upNextSlugs = new Set(upNextList.map((a) => a.slug));
+
+  const popularList = allArticles
+    .filter(
+      (a) =>
+        a.slug !== article.slug &&
+        !categoryGridSlugs.has(a.slug) &&
+        !upNextSlugs.has(a.slug)
+    )
+    .slice(0, 7);
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wiremingle.com";
   const articleUrl = `${siteUrl}/${article.category.toLowerCase()}/${article.slug}`;
@@ -220,6 +246,27 @@ export default async function ArticleDetailPage({ params }: PageProps) {
       },
     ],
   };
+
+  if (isClaimedLegalMandate) {
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(newsArticleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <ClaimedLegalMandateArticle
+          article={article}
+          upNextArticles={upNextList}
+          mostPopularArticles={popularList}
+          categoryGridArticles={categoryGridArticles}
+        />
+      </>
+    );
+  }
 
   return (
     <main className="w-full min-h-screen bg-white font-sans text-neutral-900 select-none">

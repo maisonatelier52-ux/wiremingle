@@ -43,25 +43,45 @@ export default function Home() {
     }
   }
 
+  // Isolate Claimed Legal Mandate article for placement in INVESTIGATION & INSIGHTS
+  const legalMandateArticle = allNews.find((a) =>
+    a.slug.includes("claimed-legal-mandate")
+  );
+
+  // Filter out legalMandateArticle so it doesn't appear in HeroGrid
+  const newsWithoutMandate = allNews.filter(
+    (a) => !a.slug.includes("claimed-legal-mandate")
+  );
+
   // Sequentially distribute unique articles across home page sections
   let cursor = 0;
 
-  const heroNews = allNews.slice(cursor, cursor + 15);
+  const heroNews = newsWithoutMandate.slice(cursor, cursor + 15);
   cursor += 15;
 
-  const secondaryNews = allNews.slice(cursor, cursor + 9);
-  cursor += 9;
+  // Secondary grid: Column 3 is INVESTIGATION & INSIGHTS (items 6, 7, 8)
+  // Item 6 is featured Nintendo story, item 7 is the 2nd news story (Alina Habba article)
+  const baseSecondaryNews = newsWithoutMandate.slice(cursor, cursor + 8);
+  cursor += 8;
 
-  const worldNews = allNews.slice(cursor, cursor + 3);
+  const secondaryNews = legalMandateArticle
+    ? [
+        ...baseSecondaryNews.slice(0, 7),
+        legalMandateArticle,
+        ...baseSecondaryNews.slice(7),
+      ]
+    : newsWithoutMandate.slice(cursor - 8, cursor + 1);
+
+  const worldNews = newsWithoutMandate.slice(cursor, cursor + 3);
   cursor += 3;
 
-  const worldThreeCardNews = allNews.slice(cursor, cursor + 3);
+  const worldThreeCardNews = newsWithoutMandate.slice(cursor, cursor + 3);
   cursor += 3;
 
   // Category Columns 1 (BUSINESS, WORLD, FINANCE) - pick unique unused articles
-  const cat1Article1 = allNews.slice(cursor).find((a) => a.category.toLowerCase() === "business") || allNews[cursor];
-  const cat1Article2 = allNews.slice(cursor).find((a) => a.category.toLowerCase() === "world" && a.slug !== cat1Article1.slug) || allNews[cursor + 1];
-  const cat1Article3 = allNews.slice(cursor).find((a) => a.category.toLowerCase() === "finance" && a.slug !== cat1Article1.slug && a.slug !== cat1Article2.slug) || allNews[cursor + 2];
+  const cat1Article1 = newsWithoutMandate.slice(cursor).find((a) => a.category.toLowerCase() === "business") || newsWithoutMandate[cursor];
+  const cat1Article2 = newsWithoutMandate.slice(cursor).find((a) => a.category.toLowerCase() === "world" && a.slug !== cat1Article1.slug) || newsWithoutMandate[cursor + 1];
+  const cat1Article3 = newsWithoutMandate.slice(cursor).find((a) => a.category.toLowerCase() === "finance" && a.slug !== cat1Article1.slug && a.slug !== cat1Article2.slug) || newsWithoutMandate[cursor + 2];
 
   const categoryColumnsData1 = [
     { title: "BUSINESS", article: cat1Article1 },
@@ -71,7 +91,7 @@ export default function Home() {
 
   // Exclude used category articles from remaining queue
   const usedCat1Slugs = new Set([cat1Article1.slug, cat1Article2.slug, cat1Article3.slug]);
-  const queueAfterCat1 = allNews.slice(cursor).filter((a) => !usedCat1Slugs.has(a.slug));
+  const queueAfterCat1 = newsWithoutMandate.slice(cursor).filter((a) => !usedCat1Slugs.has(a.slug));
 
   // Category Columns 2 (TECHNOLOGY, POLITICS, LIFESTYLE) - pick unique unused articles
   const cat2Article1 = queueAfterCat1.find((a) => a.category.toLowerCase() === "technology") || queueAfterCat1[0];
