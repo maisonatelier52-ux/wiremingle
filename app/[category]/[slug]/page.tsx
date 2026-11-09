@@ -17,9 +17,17 @@ interface PageProps {
   }>;
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams({
+  params,
+}: {
+  params?: { category?: string };
+}) {
   const articles = getAllArticlesSorted();
-  return articles.map((article) => ({
+  const parentCategory = params?.category?.toLowerCase();
+  const filtered = parentCategory
+    ? articles.filter((a) => a.category.toLowerCase() === parentCategory)
+    : articles;
+  return filtered.map((article) => ({
     category: article.category.toLowerCase(),
     slug: article.slug,
   }));
@@ -190,7 +198,7 @@ export default async function ArticleDetailPage({ params }: PageProps) {
         !categoryGridSlugs.has(a.slug) &&
         !upNextSlugs.has(a.slug)
     )
-    .slice(0, 7);
+    .slice(0, 4);
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://wiremingle.com";
   const articleUrl = `${siteUrl}/${article.category.toLowerCase()}/${article.slug}`;

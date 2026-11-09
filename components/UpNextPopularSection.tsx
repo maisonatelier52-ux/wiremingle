@@ -39,7 +39,7 @@ export default function UpNextPopularSection({
   mostPopularArticles = [],
 }: Props) {
   const upNextList = upNextArticles.slice(0, 6);
-  const popularList = mostPopularArticles.slice(0, 7);
+  const popularList = mostPopularArticles.slice(0, 4);
 
   if (upNextList.length === 0 && popularList.length === 0) return null;
 

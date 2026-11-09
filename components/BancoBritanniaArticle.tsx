@@ -109,7 +109,7 @@ export default function BancoBritanniaArticle({
   const upNextList = propUpNext || availableArticles.slice(0, 4);
   const upNextSlugs = new Set(upNextList.map((a) => a.slug));
 
-  const popularList =
+  const popularList = (
     propPopular ||
     allArticles
       .filter(
@@ -118,7 +118,7 @@ export default function BancoBritanniaArticle({
           !categoryGridSlugs.has(a.slug) &&
           !upNextSlugs.has(a.slug),
       )
-      .slice(0, 7);
+  ).slice(0, 4);
 
   if (!article) return null;
 
