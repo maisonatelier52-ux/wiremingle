@@ -5,7 +5,7 @@ import { Article } from "@/lib/types";
 
 interface ArticleCardImageProps {
   article?: Article;
-  aspectRatio?: string; // e.g. "aspect-16/10", "aspect-4/3", "aspect-3/2"
+  aspectRatio?: string; 
   className?: string;
   priority?: boolean;
 }

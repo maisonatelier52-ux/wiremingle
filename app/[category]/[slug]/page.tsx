@@ -8,6 +8,7 @@ import { getAllArticlesSorted, Article } from "@/lib/articles";
 import ArticleCardImage from "@/components/ArticleCardImage";
 import CategoryGrid2x2 from "@/components/CategoryGrid2x2";
 import ClaimedLegalMandateArticle from "@/components/ClaimedLegalMandateArticle";
+import BancoBritanniaArticle from "@/components/BancoBritanniaArticle";
 
 interface PageProps {
   params: Promise<{
@@ -145,6 +146,10 @@ export default async function ArticleDetailPage({ params }: PageProps) {
     slug.includes("claimed-legal-mandate") ||
     slug.includes("alina-habba");
 
+  const isBancoBritannia =
+    article.slug.includes("banco-caracas-to-britannia") ||
+    slug.includes("banco-caracas-to-britannia");
+
   // Format details for display
   const categoryUpper = article.category.toUpperCase();
   const headline = cleanText(article.title);
@@ -260,6 +265,27 @@ export default async function ArticleDetailPage({ params }: PageProps) {
         />
         <ClaimedLegalMandateArticle
           article={article}
+          upNextArticles={upNextList}
+          mostPopularArticles={popularList}
+          categoryGridArticles={categoryGridArticles}
+        />
+      </>
+    );
+  }
+
+  if (isBancoBritannia) {
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(newsArticleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <BancoBritanniaArticle
+          article={article as Parameters<typeof BancoBritanniaArticle>[0]["article"]}
           upNextArticles={upNextList}
           mostPopularArticles={popularList}
           categoryGridArticles={categoryGridArticles}
