@@ -319,9 +319,13 @@ export default async function ArticleDetailPage({ params }: PageProps) {
         <div className="flex flex-col mb-6">
           {/* Category Breadcrumb / Tag */}
           <div className="flex items-center gap-2 text-xs font-black tracking-widest text-[#E31B23] uppercase mb-2">
-            <Link href={`/${article.category.toLowerCase()}`} className="hover:underline">
-              {categoryUpper}
-            </Link>
+            {allCategoryNames.includes(article.category.toLowerCase()) ? (
+              <Link href={`/${article.category.toLowerCase()}`} className="hover:underline">
+                {categoryUpper}
+              </Link>
+            ) : (
+              <span>{categoryUpper}</span>
+            )}
           </div>
 
           {/* Headline Title */}
