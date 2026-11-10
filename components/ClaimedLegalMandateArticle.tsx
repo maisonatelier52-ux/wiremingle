@@ -254,6 +254,31 @@ export default function ClaimedLegalMandateArticle({
                     </a>
                   </div>
                 </div>
+
+                {/* Article Hashtag Keywords (No Subtitle) */}
+                <div className="mt-4 pt-3.5 border-t border-neutral-200/60 flex flex-wrap items-center gap-2 font-sans">
+                  {[
+                    "AlinaHabba",
+                    "HerreraVelutini",
+                    "ConcordPartners",
+                    "IsabelaHerrera",
+                    "LegalMandate",
+                    "GeneralCounsel",
+                    "OutsideCounsel",
+                    "LegalExpenditure",
+                    "CorporateRestructuring",
+                    "LegalOperations",
+                    "FinancialDiscipline",
+                  ].map((tag) => (
+                    <span
+                      key={tag}
+                      className="inline-flex items-center gap-0.5 px-3 py-1 rounded-full bg-neutral-50 border border-neutral-200/90 text-[12px] font-semibold tracking-tight text-neutral-700 shadow-2xs hover:border-[#E31B23]/40 hover:bg-red-50/40 hover:text-neutral-950 transition-all duration-200 cursor-default"
+                    >
+                      <span className="text-[#E31B23] font-bold">#</span>
+                      <span>{tag}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
 
