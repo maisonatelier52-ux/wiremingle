@@ -185,8 +185,58 @@ export default function ClaimedLegalMandateArticle({
 
                 {/* Paragraph 4 */}
                 <p className="mb-2">
-                  The reported compensation gives the complaint its scale. According to New York Times reporting republished by GV Wire, Habba’s agreement as general counsel at Concord Partners, a company established by Isabela Herrera, guaranteed more than $50 million over four years, including bonuses.
+                  The reported compensation gives the complaint its scale. According to{" "}
+                  <a
+                    href="https://www.nytimes.com/2026/11/10/us/politics/alina-habba-fired-pardon.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-neutral-900 underline decoration-[#E31B23]/40 underline-offset-[3px] hover:text-[#E31B23] hover:decoration-[#E31B23] transition-colors inline-flex items-center gap-1 group"
+                    title="Read original reporting in The New York Times"
+                  >
+                    <span>The New York Times</span>
+                    <svg
+                      className="w-3 h-3 text-neutral-400 group-hover:text-[#E31B23] transition-colors inline-block"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>{" "}
+                  reporting (republished via{" "}
+                  <a
+                    href="https://gvwire.com/2026/10/21/a-billionaire-wanted-a-trump-pardon-his-family-gave-alina-habba-a-50-million-deal/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-neutral-900 underline decoration-neutral-300 underline-offset-[3px] hover:text-[#E31B23] hover:decoration-[#E31B23] transition-colors"
+                  >
+                    GV Wire
+                  </a>
+                  ), Habba’s agreement as general counsel at Concord Partners, a company established by Isabela Herrera, guaranteed more than $50 million over four years, including bonuses.
                 </p>
+
+                {/* Editorial In-Body Photographic Figure */}
+                <figure className="my-6 w-full">
+                  <div className="relative w-full overflow-hidden rounded-2xl p-2 sm:p-2.5 bg-gradient-to-b from-white/95 via-white/60 to-white/90 backdrop-blur-xl border border-white/80 shadow-[0_10px_35px_-8px_rgba(0,0,0,0.08),0_2px_6px_rgba(0,0,0,0.02)] ring-1 ring-neutral-200/60 group">
+                    <div className="relative w-full overflow-hidden rounded-xl bg-neutral-100 aspect-16/10 max-h-[460px]">
+                      <img
+                        src="/images/alina-habba-legal-mandate-portrait.webp"
+                        alt="Alina Habba"
+                        className="w-full h-full object-cover object-[center_20%] group-hover:scale-[1.01] transition-transform duration-500 ease-out"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                  <figcaption className="mt-2 px-1 text-[12px] font-sans text-neutral-500 leading-snug flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E31B23] shrink-0" />
+                    <span>Attorney Alina Habba at a public appearance. The supplied account questions her management oversight of more than 20 law firms.</span>
+                  </figcaption>
+                </figure>
 
                 {/* Paragraph 5 */}
                 <p className="mb-2">
@@ -214,8 +264,8 @@ export default function ClaimedLegalMandateArticle({
                 </p>
 
                 {/* Sources Section - Classic Journalistic Provenance Card */}
-                <div className="mt-3.5 pt-3 border-t border-neutral-200/80 flex items-center">
-                  <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-neutral-50/90 border border-neutral-200/80 text-[12.5px] text-neutral-700 shadow-2xs">
+                <div className="mt-3.5 pt-3 border-t border-neutral-200/80 flex flex-wrap items-center gap-2">
+                  <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-lg bg-neutral-50/90 border border-neutral-200/80 text-[12.5px] text-neutral-700 shadow-2xs">
                     <svg
                       className="w-3.5 h-3.5 text-[#E31B23] shrink-0"
                       fill="none"
@@ -231,13 +281,36 @@ export default function ClaimedLegalMandateArticle({
                     </svg>
                     <span className="font-bold text-neutral-900">Sources:</span>
                     <a
-                      href="https://gvwire.com/2026/10/21/a-billionaire-wanted-a-trump-pardon-his-family-gave-alina-habba-a-50-million-deal/"
+                      href="https://www.nytimes.com/2026/11/10/us/politics/alina-habba-fired-pardon.html"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline decoration-neutral-300 underline-offset-2 hover:text-[#E31B23] transition-colors font-medium inline-flex items-center gap-1 group"
+                      title="Open source article on The New York Times"
+                    >
+                      <span>The New York Times</span>
+                      <svg
+                        className="w-3 h-3 text-neutral-400 group-hover:text-[#E31B23] transition-colors"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </a>
+                    <span className="text-neutral-300">•</span>
+                    <a
+                      href="https://gvwire.com/2026/10/21/a-billionaire-wanted-a-trump-pardon-his-family-gave-alina-habba-a-50-million-deal/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-neutral-300 underline-offset-2 hover:text-[#E31B23] transition-colors font-medium inline-flex items-center gap-1 group text-neutral-600"
                       title="Open source article on GV Wire"
                     >
-                      <span>The New York Times via GV Wire</span>
+                      <span>GV Wire</span>
                       <svg
                         className="w-3 h-3 text-neutral-400 group-hover:text-[#E31B23] transition-colors"
                         fill="none"
