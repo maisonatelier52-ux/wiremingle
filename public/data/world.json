@@ -1,6 +1,45 @@
 [
     {
         "category": "world",
+        "title": "NASA Opens Astronaut Recruitment Drive as Artemis Lunar Exploration Program Expands",
+        "slug": "nasa-opens-astronaut-recruitment-drive-as-artemis-lunar-exploration-program-expands",
+        "image": "/images/nasa-recruits-new-astronauts-artemis-lunar-program.webp",
+        "date": "November. 12, 2026",
+        "shortdescription": "NASA has launched a new recruitment campaign for its astronaut corps, seeking scientists, engineers, and test pilots to crew upcoming International Space Station missions, deep-space lunar flights under the Artemis program, and future expeditions toward Mars.",
+        "description": [
+            {
+                "subtitle": "Space Agency Calls for Next Generation of Deep-Space Explorers",
+                "text": "The National Aeronautics and Space Administration has officially opened applications for its newest class of astronaut candidates, inviting qualified applicants to help lead humanity's return to the Moon and lay the groundwork for future crewed missions to Mars. Agency officials announced that the recruitment drive aims to bolster the active astronaut corps as NASA transitions from low-Earth orbit operations aboard the International Space Station to sustained deep-space exploration under the Artemis program. Selected candidates will join an elite group of spacefarers tasked with operating next-generation spacecraft, conducting lunar surface science, and testing the life-support and habitation systems required for multi-year interplanetary voyages."
+            },
+            {
+                "subtitle": "Rigorous Qualifications and Selection Standards for Applicants",
+                "text": "To qualify for consideration, applicants must hold U.S. citizenship, possess at least a master's degree in a STEM discipline—such as engineering, biological science, physical science, computer science, or mathematics—and have a minimum of three years of related, progressively responsible professional experience or at least 1,000 hours of pilot-in-command time in jet aircraft. Advanced degrees in medicine or completion of nationally recognized test pilot school programs can also fulfill the academic benchmark. Beyond technical credentials, candidates must pass NASA's stringent long-duration flight physical examination and demonstrate exceptional leadership, teamwork, and adaptability under high-pressure operational conditions."
+            },
+            {
+                "subtitle": "Two Years of Intensive Training at Johnson Space Center",
+                "text": "Finalists chosen from what typically amounts to thousands of applications will report to NASA's Johnson Space Center in Houston for approximately two years of foundational astronaut candidate training. The curriculum covers spacecraft systems, extravehicular spacewalk simulations in the agency's Neutral Buoyancy Laboratory, robotics operations, high-performance T-38 jet proficiency, international language instruction, and geological field expeditions modeled on the lunar south pole. Candidates will also train alongside international partner agencies and commercial spacecraft providers as NASA integrates multiple crew vehicles, lunar landers, and orbital gateway modules into its exploration architecture."
+            },
+            {
+                "subtitle": "Building a Sustained Human Presence on the Moon and Beyond",
+                "text": "NASA leaders emphasized that the new astronaut class will enter active flight status at a pivotal moment in spaceflight history. Through the Artemis campaign, the agency plans not only to land diverse crews on unexplored regions of the lunar south pole—where water ice deposits inside permanently shadowed craters could support in-situ resource utilization—but also to establish lunar base camps and the Gateway space station in lunar orbit. Lessons learned from living and working on the Moon's surface will directly inform the engineering, medical protocols, and operational autonomy needed to send the first human crews on the months-long journey to Mars in the coming decades."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "International Affairs & Space Correspondent",
+            "bio": "Ramon T. Maris covers international science initiatives, aerospace exploration, global policy, and major world events for WireMingle.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "world",
         "title": "For Palestinian citizens of Israel, a historic vote born of fear and frustration",
         "slug": "for-palestinian-citizens-of-israel-a-historic-vote-born-of-fear-and-frustration",
         "image": "/images/palestinian-citizens-israel-historic-vote.webp",
