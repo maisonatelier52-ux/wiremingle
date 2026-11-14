@@ -1,6 +1,45 @@
 [
     {
         "category": "world",
+        "title": "Ukraine Launches Nearly 1,200 Drones at Russia as US-Led Talks Consider Wider European Security",
+        "slug": "ukraine-launches-nearly-1200-drones-at-russia-as-us-led-talks-consider-wider-european-security",
+        "image": "/images/ukraine-launches-massive-drone-swarm-russia-security-talks.webp",
+        "date": "November. 14, 2026",
+        "shortdescription": "Ukrainian forces unleashed an unprecedented wave of nearly 1,200 long-range attack drones targeting Russian military logistics, energy depots, and air defense batteries as high-stakes, US-brokered diplomatic consultations convene to re-evaluate the architecture of European security.",
+        "description": [
+            {
+                "subtitle": "Unprecedented Wave of 1,200 Drones Strikes Across Russian Territory",
+                "text": "In the largest coordinated uncrewed aerial offensive of the war, Ukrainian military forces launched an estimated 1,200 long-range strike drones across multiple Russian border oblasts and deep into industrial manufacturing centers. Ukrainian defense officials confirmed that the multi-axis barrage was engineered to overwhelm Russian air defense networks by combining radar-spoofing decoys with weaponized autonomous drones targeting ammunition depots, military airfields, fuel storage terminals, and rail transit hubs. Russian regional authorities declared state-level emergency alerts across several administrative districts, reporting extensive airspace closures, disrupted municipal power grids, and secondary industrial fires caused by intercepted debris and direct impacts."
+            },
+            {
+                "subtitle": "High-Stakes Diplomatic Consultations Convene on Broader European Security",
+                "text": "The massive aerial escalation unfolded against the backdrop of critical multilateral security negotiations initiated by the United States and European allies to assess the broader geopolitical equilibrium across Eastern Europe. Diplomatic envoys from NATO member states gathered in Geneva to formulate strategic frameworks aimed at mitigating escalation risks, stabilizing contested border zones, and reinforcing long-term defense guarantees for sovereign states along the alliance's eastern flank. Western officials familiar with the closed-door proceedings noted that the discussions have broadened beyond immediate ceasefire parameters to confront fundamental questions surrounding future European security architecture, arms control verification, and strategic deterrence."
+            },
+            {
+                "subtitle": "Kyiv Aims to Shape Negotiation Leverage with Long-Range Asymmetric Power",
+                "text": "Military strategists and regional defense analysts view the large-scale drone operation as a calculated effort by Kyiv to establish maximum battlefield leverage ahead of critical diplomatic deadlines. By demonstrating an expanding domestic capability to produce and coordinate massed uncrewed strikes deep behind Russian operational frontlines, Ukrainian command is signaling that any durable settlement must account for Ukraine's evolving asymmetric deterrent power. Ukrainian officials have insisted that negotiations cannot proceed from positions of territorial concession or forced neutrality, emphasizing that lasting peace depends on concrete, enforceable mutual security guarantees backed by Western military assistance."
+            },
+            {
+                "subtitle": "Moscow Warns Against Western Escalation Amid Intensifying Frontline Clashes",
+                "text": "In Moscow, Kremlin spokespersons and defense ministry representatives condemned the coordinated drone barrage, accusing Western nations of facilitating targeting telemetry and providing satellite intelligence that enabled the cross-border strikes. Russian officials reiterated that ongoing diplomatic initiatives must address what Moscow characterizes as foundational security concerns regarding NATO expansion and military infrastructure deployment in proximity to Russian borders. Despite the diplomatic overtures, frontline artillery bombardments and tactical ground skirmishes continued unabated along the eastern contact line, highlighting the immense challenges negotiators face in translating tentative diplomatic dialogue into verifiable security de-escalation."
+            }
+        ],
+        "author": {
+            "name": "Evelyn St. Claire",
+            "role": "Senior Foreign & Defense Correspondent",
+            "bio": "Evelyn St. Claire covers international diplomacy, armed conflicts, European defense architecture, and global strategic developments for WireMingle.",
+            "image": "/images/evelyn-st-claire.webp",
+            "slug": "evelyn-st-claire",
+            "email": "evelyn.stclaire@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "world",
         "title": "Global Microsoft Cloud Disruption Paralyzes Airlines, Banks, and Government Agencies",
         "slug": "global-microsoft-cloud-disruption-paralyzes-airlines-banks-and-government-agencies",
         "image": "/images/global-microsoft-cloud-outage-disruption.webp",
