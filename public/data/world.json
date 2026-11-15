@@ -1,6 +1,45 @@
 [
     {
         "category": "world",
+        "title": "Israel Kills a Top Hamas Commander as Jordan Sentences 3 in Church Attack, and Other Mideast News",
+        "slug": "israel-kills-top-hamas-commander-jordan-sentences-church-attack-mideast-news",
+        "image": "/images/israeli-military-west-bank-palestinians-settler-clash.webp",
+        "date": "November. 15, 2026",
+        "shortdescription": "Israeli defense forces confirmed the targeted killing of a senior Hamas field commander in targeted airstrikes, while Jordan's state security tribunal sentenced three militants over a thwarted church attack amid regional security developments.",
+        "description": [
+            {
+                "subtitle": "Precision Airstrike Targets Senior Hamas Operations Figure",
+                "text": "Israeli military and intelligence officials confirmed that a targeted airstrike conducted in the Gaza Strip killed a senior Hamas military commander responsible for coordinating regional rocket brigades and subterranean offensive networks. The Israel Defense Forces said the strike was executed following intelligence tracking that pinpointed the operative’s location within a fortified tactical command node. Defense spokespersons stated that the commander had played a direct role in planning multiple cross-border assaults and orchestrating weapons transfers across regional smuggling channels."
+            },
+            {
+                "subtitle": "Jordanian Tribunal Hands Down Sentences Over Foiled Church Attack",
+                "text": "In Amman, Jordan's State Security Court sentenced three individuals to extended prison terms with hard labor after convicting them of plotting an armed attack against a historic Christian place of worship in the kingdom. State prosecutors presented evidence showing the defendants had procured automatic weapons, explosive materials, and reconnaissance footage of civilian assembly areas before their cell was dismantled by Jordanian counter-terrorism intelligence officers. Judicial officials emphasized that Jordan's security apparatus remains vigilant against extremist cells seeking to disrupt civil harmony and interfaith coexistence."
+            },
+            {
+                "subtitle": "Border Tensions and Air Defense Interceptions Rattle the Levant",
+                "text": "Elsewhere across the Middle East, security forces maintained high-alert postures along volatile border corridors connecting southern Lebanon, northern Israel, and southwestern Syria. Regional air defense units reported multiple radar tracking alerts and cross-border drone incursions, prompting sporadic artillery exchanges along the demarcation lines. International peacekeeping contingents stationed along the frontier issued renewed appeals for restraint, warning that localized tactical clashes risk expanding into wider regional confrontations if miscalculations occur."
+            },
+            {
+                "subtitle": "Diplomatic Channels Push for Ceasefire Guarantees and Aid Corridors",
+                "text": "As security operations unfolded, regional mediators from Egypt, Qatar, and the United States continued back-channel diplomatic discussions aimed at negotiating sustainable humanitarian access and prisoner exchange protocols. Envoys emphasized that stabilizing critical civilian supply corridors and establishing verifiable de-escalation benchmarks remain essential prerequisites for mitigating severe humanitarian strains and preventing further armed flare-ups across contested sectors of the region."
+            }
+        ],
+        "author": {
+            "name": "Evelyn St. Claire",
+            "role": "Senior Foreign & Middle East Correspondent",
+            "bio": "Evelyn St. Claire covers international diplomacy, armed conflicts, Middle Eastern geopolitics, and regional security affairs for WireMingle.",
+            "image": "/images/evelyn-st-claire.webp",
+            "slug": "evelyn-st-claire",
+            "email": "evelyn.stclaire@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "world",
         "title": "Ukraine Launches Nearly 1,200 Drones at Russia as US-Led Talks Consider Wider European Security",
         "slug": "ukraine-launches-nearly-1200-drones-at-russia-as-us-led-talks-consider-wider-european-security",
         "image": "/images/ukraine-launches-massive-drone-swarm-russia-security-talks.webp",
