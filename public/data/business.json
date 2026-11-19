@@ -1,6 +1,45 @@
 [
     {
         "category": "business",
+        "title": "Anthropic Set to Begin Trading After Pricing Its Stock at $83 per Share in Biggest IPO on Record",
+        "slug": "anthropic-set-to-begin-trading-after-pricing-stock-at-83-per-share-biggest-ipo-on-record",
+        "image": "/images/anthropic-ipo-record-wall-street-debut.webp",
+        "date": "November. 19, 2026",
+        "shortdescription": "Artificial intelligence pioneer Anthropic priced its landmark initial public offering at $83 per share, surpassing its targeted range to raise unprecedented capital and achieve a historic $1.3 trillion market valuation ahead of its Wall Street debut.",
+        "description": [
+            {
+                "subtitle": "Historic Valuation Anchors the Largest Initial Public Offering in Market History",
+                "text": "Artificial intelligence powerhouse Anthropic has finalized the pricing of its historic initial public offering at $83 per share, comfortably surpassing its preliminary marketed range following overwhelming institutional demand from sovereign wealth funds, major mutual funds, and technology-focused asset managers. The offering establishes Anthropic as the most valuable corporate debut in stock market history, conferring a total market capitalization exceeding $1.3 trillion and raising tens of billions in net proceeds to finance next-generation frontier model research and hyperscale computing infrastructure.\n\nUnderwriters led by Morgan Stanley, Goldman Sachs, and J.P. Morgan exercised full overallotment options after orders exceeded available shares by more than fifteen times. The euphoric reception reflects Wall Street's voracious appetite for pure-play generative AI leaders capable of demonstrating tangible enterprise monetization alongside cutting-edge research achievements."
+            },
+            {
+                "subtitle": "Robust Enterprise Monetization and Claude Adoption Power Financial Metrics",
+                "text": "Anthropic's journey from a research-focused public benefit corporation to the epicenter of Wall Street trading has been fueled by exponential commercial adoption of its flagship Claude intelligence suite. In its regulatory registration filings, the San Francisco-based company disclosed annualized recurring revenues exceeding $8 billion, driven primarily by enterprise subscriptions, dedicated private cloud deployments, and developer API integrations across healthcare, financial analysis, software engineering, and legal workflows.\n\nUnlike earlier speculative tech debuts, Anthropic presented prospective investors with expanding gross operating margins and a rapidly growing roster of Fortune 500 clients. Long-term commercial cloud partnerships with Amazon and Google have provided both massive technical distribution scale and discounted access to specialized high-performance tensor computing clusters, insulating the firm from near-term hardware bottlenecks."
+            },
+            {
+                "subtitle": "Capital Influx to Fuel Multi-Gigawatt AI Data Centers and Frontier Research",
+                "text": "Company executives stated that the unprecedented capital injection will be deployed almost entirely toward procuring next-generation AI accelerators and securing multi-gigawatt clean power contracts required to train its upcoming frontier model architectures. As competition with rivals OpenAI, Google, and Meta intensifies, the computational cost of scaling multimodal foundation systems has grown into the tens of billions of dollars per generation.\n\nAnthropic co-founder and Chief Executive Officer Dario Amodei emphasized that securing permanent public market access provides the financial sovereignty needed to pursue multi-year technical breakthroughs without sacrificing rigorous safety benchmarks. The company affirmed that its novel Long-Term Benefit Trust governance structure—designed to ensure corporate development adheres to constitutional AI and public safety standards—remains fully intact following the public float."
+            },
+            {
+                "subtitle": "Wall Street Views the Debut as a Watershed Moment for Tech Equities",
+                "text": "Traders and equity analysts across the New York Stock Exchange and Nasdaq described the listing as a transformative milestone that could decisively revive the broader initial public offering pipeline after years of subdued tech market debuts. Portfolio managers anticipate that Anthropic's performance on its first day of secondary trading will serve as a bellwether for investor confidence in the sustainability of the artificial intelligence economic expansion.\n\nBeyond immediate market excitement, the debut solidifies generative AI as the dominant driver of modern corporate equity valuations. With institutional liquidity flowing freely into the listing, analysts believe Anthropic’s public milestone marks the beginning of a new chapter where frontier artificial intelligence firms compete openly on public quarterly earnings, enterprise retention metrics, and global technological leadership."
+            }
+        ],
+        "author": {
+            "name": "Ramon T. Maris",
+            "role": "Senior Business & Markets Correspondent",
+            "bio": "Ramon T. Maris covers financial markets, central banking, fintech infrastructure, and corporate banking strategy for WireMingle.",
+            "image": "/images/ramon-t-maris.webp",
+            "slug": "ramon-t-maris",
+            "email": "ramon.maris@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "business",
         "title": "A Technical Issue at JPMorgan Chase Triggers Online Banking Delays for Major US Banks",
         "slug": "technical-issue-jpmorgan-chase-triggers-online-banking-delays-major-us-banks",
         "image": "/images/jpmorgan-chase-technical-issue-online-banking-delays.webp",
