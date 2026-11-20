@@ -1,6 +1,45 @@
 [
     {
         "category": "world",
+        "title": "Saudi Arabia Intercepts More Yemen Houthi Missiles and Drones, and Other Mideast News",
+        "slug": "saudi-arabia-intercepts-yemen-houthi-missiles-drones-mideast-news",
+        "image": "/images/saudi-pipeline-drone-strike-oil-flow.webp",
+        "date": "November. 20, 2026",
+        "shortdescription": "Saudi air defense batteries successfully engaged and destroyed multiple ballistic projectiles and explosive-laden drones launched by Yemen's Houthi movement toward southern border regions, as military developments unfold across the wider Middle East.",
+        "description": [
+            {
+                "subtitle": "Air Defense Batteries Engage Cross-Border Aerial Incursions",
+                "text": "Saudi Arabian air defense forces intercepted a salvo of ballistic missiles and explosive-laden unmanned aerial vehicles fired from Yemen by the Houthi movement toward southern provincial border installations. Military spokespersons for the Arab coalition confirmed that Patriot missile defense batteries and combat air patrols successfully tracked and destroyed the incoming projectiles over uninhabited border sectors before they could reach commercial energy infrastructure or civilian municipal centers.\n\nCivil defense authorities reported no casualties or structural devastation, though fragments of intercepted munitions were collected by forensic military teams across rural southern desert areas. Coalition leadership denounced the continued cross-border attacks as reckless provocations that endanger vital Red Sea shipping lanes and undermine fragile regional stability."
+            },
+            {
+                "subtitle": "Maritime Shipping Patrols on High Alert Across Red Sea Corridors",
+                "text": "The latest cross-border missile launch coincided with renewed warnings from Western naval coalitions operating in the southern Red Sea and the Bab el-Mandeb strait. Commercial shipping associations noted that naval patrols have intensified convoy escorts and radar surveillance as missile threats from coastal launch sites remain volatile.\n\nInternational maritime logistics operators continue routing a substantial portion of global container traffic around Africa’s Cape of Good Hope, sustaining elevated freight insurance premiums and adding transit days between Asian manufacturing centers and European ports. Western naval commanders reaffirmed their commitment to protecting freedom of navigation, warning that unprovoked strikes against international commercial vessels will be met with decisive defensive countermeasures."
+            },
+            {
+                "subtitle": "Regional Border Demarcations and Ceasefire Talks in the Levant",
+                "text": "Across the broader Middle East, security forces maintained heightened alert levels along border zones connecting southern Lebanon, northern Israel, and southwestern Syria. Periodic cross-border artillery duels and localized drone reconnaissance flights triggered civil defense alarms in border towns, prompting international peacekeeping missions to urge all combatants to adhere strictly to existing armistice agreements.\n\nIn diplomatic corridors, envoys from regional powers and Western capitals engaged in urgent consultations aimed at establishing de-escalation channels and securing durable humanitarian agreements. Mediators emphasized that preventing localized tactical engagements from spiraling into multi-front regional conflicts remains the paramount diplomatic objective."
+            },
+            {
+                "subtitle": "Diplomatic Efforts Focus on Sustained De-Escalation Frameworks",
+                "text": "Diplomatic representatives in Muscat, Doha, and Cairo continued mediation efforts seeking to revitalize political talks between Yemeni factions and regional stakeholders. Regional analysts observed that achieving a sustainable end to cross-border missile launches requires addressing core humanitarian logistics, opening contested transit corridors, and agreeing on permanent revenue-sharing arrangements for public civil services.\n\nWhile sporadic clashes test the patience of regional capitals, international observers emphasized that maintaining open diplomatic communication remains vital to preventing sudden escalations from derailing long-term peacebuilding initiatives across the Arabian Peninsula."
+            }
+        ],
+        "author": {
+            "name": "Evelyn St. Claire",
+            "role": "Senior Foreign & Middle East Correspondent",
+            "bio": "Evelyn St. Claire covers international diplomacy, armed conflicts, Middle Eastern geopolitics, and regional security affairs for WireMingle.",
+            "image": "/images/evelyn-st-claire.webp",
+            "slug": "evelyn-st-claire",
+            "email": "evelyn.stclaire@wiremingle.com",
+            "twitter": "",
+            "facebook": "",
+            "instagram": "",
+            "substack": "",
+            "medium": ""
+        }
+    },
+    {
+        "category": "world",
         "title": "The Driverless Taxis, Robots and Tech Companies in APEC Host City Shenzhen Show China’s Ambitions",
         "slug": "driverless-taxis-robots-tech-companies-apec-host-city-shenzhen-china-ambitions",
         "image": "/images/shenzhen-autonomous-taxis-robots-tech-apec-china.webp",
